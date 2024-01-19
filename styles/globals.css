@@ -1,0 +1,16 @@
+@import './fonts.css';
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+  }
+
+input[type='radio'] {
+  display: none;
+}

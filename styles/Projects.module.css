@@ -1,0 +1,169 @@
+.containerMain {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Nebula';
+}
+
+.image {
+  object-fit: cover;
+  height: 100%;
+  min-height: 500px;
+  opacity: 0;
+  width: 100%;
+  filter: saturate(0);
+  transition: opacity 3s ease-in-out;
+  mask-image: linear-gradient(to top, transparent, black 50%, black 100%);
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+}
+
+.projectsAnchor {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  z-index: 10;
+}
+
+.containerProjects {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.projectsTitle {
+  font-family: 'Mechsuit';
+  opacity: 0;
+  transform: translateY(-30px);
+  height: auto;
+  align-self: center;
+  transition: opacity 4s ease-in-out, transform 2s ease-in-out
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 40%;
+  height: 35%;
+  transition: opacity 2s ease-in-out
+}
+
+.cards {
+  top: 10%;
+  position: relative;
+  width: 100%;
+  min-width: 250px;
+  height: 100%;
+}
+
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.cardContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cardHeader {
+  position: absolute;
+  opacity: 1;
+  text-align: center;
+  bottom: 20%;
+  z-index: 10;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  position: absolute;
+  bottom: 10%;
+  z-index: 10;
+  text-wrap: wrap;
+}
+
+.feature {
+  margin-right: 10px;
+  align-self: center;
+}
+
+
+.cards>.card:nth-of-type(3) .features:nth-of-type(1) {
+  width: 40%;
+}
+
+.cardImg {
+  filter: saturate(0);
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  transition: filter 1s ease-in-out
+}
+
+.card:nth-of-type(2) .cardImg {
+  transform: rotate(-1);
+}
+
+.cardImg:hover {
+  filter: saturate(100%);
+}
+
+.item1:checked~.cards #card3,
+.item2:checked~.cards #card1,
+.item3:checked~.cards #card2 {
+  transform: translatex(-50%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.item1:checked~.cards #card2,
+.item2:checked~.cards #card3,
+.item3:checked~.cards #card1 {
+  transform: translatex(50%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.item1:checked~.cards #card1,
+.item2:checked~.cards #card2,
+.item3:checked~.cards #card3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 10;
+}
+
+
+@media(max-width:700px) {
+  .features {
+    display: none;
+  }
+}

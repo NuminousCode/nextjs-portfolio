@@ -1,0 +1,88 @@
+.containerMain {
+    opacity: 0;
+    top: 15%;
+    left: 75%;
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    min-width: 200px;
+    height: 30%;
+    min-height: 200px;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .terminalGlitch {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 1px 1px rgba(64, 64, 64, 0.1);
+    background: radial-gradient(ellipse at center, #5a3805
+    0%, black 100%);
+    transform-origin: 50% 50%;
+    transform: scale(1.03);
+    animation: terminal-glitch 0.1s linear infinite;
+    opacity: 0.4;
+    position: absolute;
+  }
+
+  .terminal {
+    line-height: 250%;
+    font-family: 'PressStart';
+    font-size: 14px;
+    color: #fc9505;
+    position: absolute;
+    z-index: 1;
+    padding: 20% 15%;
+    overflow: hidden;
+    top: 3%;
+    right: 3%;
+    bottom: 3%;
+    left: 3%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 10px solid;
+    border-bottom-color: #222222;
+    border-left-color: #050505;
+    border-right-color: #050505;
+    border-top-color: #111111;
+    box-shadow: inset 0 0 10rem #020202, inset 0 0 3rem black, 0 0 10rem black;
+  }
+.typing{
+    opacity: .6;
+}
+  .typingCursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  @keyframes terminal-glitch {
+    0% {
+      transform: scale(.7, .8);
+    }
+    50% {
+      transform: scale(.9, 1);
+    }
+    100% {
+      transform: scale(1, .9);
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+
+
+  @media(min-height: 600px){
+    .terminal{
+      line-height: 250%;
+    }
+  }
+ 

@@ -1,0 +1,104 @@
+.containerMain{
+    width: 100vw;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    margin-top: 5%;
+    transition: opacity 2s ease-in-out
+}
+
+.tickerContent1 {
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    width: 300vw;
+    margin-left: -200%;
+    animation: 50s linear 0s infinite ticker1;
+    font-size: 24px;
+}
+.tickerContent2 {
+    padding: 0 4%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 300vw;
+    animation: 50s linear 0s infinite ticker2;
+    font-size: 24px;
+}
+
+.invertIcon{
+    filter: invert(100%);
+}
+.tickerContent2 > .item:nth-of-type(2) > .invertIcon,
+.tickerContent2 > .item:nth-of-type(6) > .invertIcon,
+.tickerContent2 > .item:nth-of-type(7) > .invertIcon,
+.tickerContent2 > .item:nth-of-type(8) > .invertIcon,
+.tickerContent2 > .item:nth-of-type(9) > .invertIcon,
+.tickerContent2 > .item:nth-of-type(13) > .invertIcon,
+.tickerContent2 > .item:nth-of-type(14) > .invertIcon,
+.tickerContent2 > .item:nth-of-type(14) > .invertIcon, 
+.tickerContent2 > .item:nth-of-type(20) > .invertIcon,
+.tickerContent2 > .item:nth-of-type(21) > .invertIcon 
+{
+    filter: invert(0%)
+}
+
+.tickerContent1 > .item:nth-of-type(20) > .invertIcon,
+.tickerContent1 > .item:nth-of-type(21) > .invertIcon
+{
+    filter: invert(0%)
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    height: auto;
+    opacity: .7;
+
+}
+.item div { 
+    order: 2;
+}
+
+@keyframes ticker1 {
+    from {transform: translate3d(0vw,0,0);}
+    to {transform: translate3d(-300vw,0,0);}
+  }
+@keyframes ticker2 {
+    from {transform: translate3d(100vw,0,0);}
+    to {transform: translate3d(-200vw,0,0);}
+  }
+
+
+  .containerMain::before,
+  .containerMain::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10%; 
+    z-index: 1;
+    background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0),  
+        rgba(0, 0, 0, 1)
+    );
+    pointer-events: none; 
+}
+
+.containerMain::before {
+    left: 0;
+    transform: rotateZ(180deg); 
+}
+
+.containerMain::after {
+    right: 0;
+}
+
+

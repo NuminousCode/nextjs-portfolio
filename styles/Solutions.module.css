@@ -1,0 +1,73 @@
+.anchorSolutions {
+  top: 10%;
+  border: solid 1px red;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Nebula';
+}
+
+.image {
+  object-fit: cover;
+  opacity: 0;
+  width: 100%;
+  min-height: 500px;
+  filter: saturate(0);
+  transition: opacity 3s ease-in-out;
+}
+
+.title {
+  opacity: 0;
+  top: 15%;
+  position: absolute;
+  text-align: center;
+  max-width: 80%;
+  align-self: center;
+  z-index: 10;
+  transition: opacity 2s ease-in-out
+}
+
+.builtWith {
+  opacity: 0;
+  top: 40%;
+  position: absolute;
+  text-align: center;
+  max-width: 50%;
+  align-self: center;
+  z-index: 10;
+  transition: opacity 2s ease-in-out
+}
+
+@media(min-width: 250px) {
+  .title {
+    max-width: 60%;
+  }
+}
+
+@media(min-width: 350px) {
+  .title {
+    max-width: 50%;
+  }
+}
+
+@media(min-width: 400px) {
+  .title {
+    max-width: 40%;
+  }
+}
+
+@media(min-width: 500px) {
+  .title {
+    max-width: 30%;
+  }
+}

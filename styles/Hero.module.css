@@ -1,0 +1,164 @@
+.containerMain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  height: 100%;
+  min-height: 750px;
+}
+
+.header {
+  position: absolute;
+  align-self: center;
+  width: 100%;
+  top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuIcon,
+.menuClosed {
+  visibility: hidden;
+}
+
+.menuIcon {
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  opacity: 1;
+}
+
+.menuClosed {
+  z-index: 10;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  opacity: 0;
+  position: absolute;
+  right: 0;
+}
+
+.menuActive {
+  opacity: 1;
+}
+
+.menuInactive {
+  opacity: 0;
+}
+
+.openMenu {
+  visibility: hidden;
+}
+
+.logo {
+  margin-left: 5%;
+  opacity: 0;
+  transform: translateY(-20px);
+  font-family: 'Techno';
+  z-index: 10;
+  font-size: 24px;
+  animation: fadeInDown 2s ease-in-out forwards;
+  transition: font-size 500ms ease, margin 500ms ease, opacity 500ms ease;
+}
+
+
+.slogan {
+  line-height: 30px;
+  font-size: 12px;
+  margin-top: 50%;
+  font-family: 'Nebula';
+  position: absolute;
+  z-index: 10;
+  margin-left: 5%;
+  text-align: left;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out .75s forwards;
+  transition: font-size 500ms ease, line-height 500ms ease, right 500ms ease, margin-top 500ms ease, opacity 500ms ease
+}
+
+.active {
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+@media(min-width: 200px) {
+  .slogan {
+    margin-top: 50%;
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 250px) {
+  .slogan {
+    margin-top: 40%;
+    font-size: 20px;
+  }
+}
+
+@media(min-width: 250px) {
+  .slogan {
+    margin-top: 30%;
+  }
+}
+
+@media(min-width: 350px) {
+  .slogan {
+    width: 70%;
+  }
+}
+
+@media(min-width: 400px) {
+  .slogan {
+    font-size: 28px;
+  }
+}
+
+@media(min-width: 450px) {
+  .slogan {
+    margin-top: 25%;
+    font-size: 28px;
+  }
+}
+
+@media(min-width: 550px) {
+  .slogan {
+    margin-top: 20%;
+    font-size: 24px;
+  }
+}
+
+@media(min-width: 650px) {
+  .slogan {
+    margin-top: 15%;
+    font-size: 24px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

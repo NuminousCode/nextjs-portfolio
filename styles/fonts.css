@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Techno';
+    src: url('../public/fonts/techno_hideo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Nebula';
+    src: url('../public/fonts/Nebula-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Nebula-Hollow';
+    src: url('../public/fonts/Nebula-Hollow.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Mechsuit';
+    src: url('../public/fonts/Mechsuit.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'PressStart';
+    src: url('../public/fonts/PressStart2P.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Perfect';
+    src: url('../public/fonts/Perfect\ DOS\ VGA\ 437\ Win.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  

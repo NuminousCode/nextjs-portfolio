@@ -1,0 +1,32 @@
+.containerMain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  font-family: 'Nebula';
+  min-height: 500px;
+}
+
+.image {
+  filter: saturate(100%);
+  object-fit: cover;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+  transition: opacity 2s ease-in-out;
+}
+
+.title {
+  opacity: 0;
+  background: linear-gradient(180deg, #FFFFFF 41.5%, #FDA564 100%);
+  background-clip: text;
+  color: transparent;
+  top: 5%;
+  position: absolute;
+  z-index: 10;
+  align-self: center;
+  transition: opacity 2s ease-in-out;
+}
+

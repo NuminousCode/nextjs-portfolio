@@ -1,0 +1,94 @@
+
+.formContainer {
+    height: 100%;
+    color: white;
+    font-family: 'PressStart';
+    font-size: 8px;
+    padding: 20px;
+    border: 1px solid #495057;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.form{
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+.inputField {
+    color: white;
+    font-size: 10px;
+    font-family: 'PressStart';
+    background-color: transparent;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #495057;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.inputField::placeholder {
+    font-family: 'PressStart';
+    font-size: 10px;
+}
+
+.message{
+    line-height: 20px;
+    flex-grow: 1;
+    color: white;
+    font-family: 'PressStart';
+    font-size: 10px;
+    min-height:200px;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    height: 40px;
+    width: 80px;
+    font-family: 'PressStart';
+    padding: 10px 20px;
+    background-color: #012a4a;
+    color: #a9d6e5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.containerContact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.containerContact > .inputField:nth-child(1){
+    margin-right: 10px;
+}
+
+@media(min-width: 750px){
+    .form{
+        height: auto;
+    }
+    .formContainer{
+        height: 75%;
+        width: 50%;
+        max-width: 400px;
+    }
+}
+@media(min-width: 1200px){
+    .formContainer{
+        max-height: 580px;
+    }
+}
+@media(min-width: 1700px){
+    .message{
+        height: 250px;
+    }
+    .formContainer{
+        max-height: 630px;
+    }
+}

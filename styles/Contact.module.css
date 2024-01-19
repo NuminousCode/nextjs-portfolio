@@ -1,0 +1,169 @@
+.containerMain {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 800px;
+    overflow: hidden;
+    font-family: 'Nebula';
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    transition: opacity 3s ease-in-out;
+}
+
+.contactAnchor{
+    position: absolute;
+    visibility: hidden;
+    top: 15%;
+}
+
+.title {
+    position: absolute;
+    z-index: 10;
+    top: 3%;
+    font-size: 24px;
+}
+.containerInner{
+    height: 100%;
+    padding: 0 10%;
+    z-index: 10;
+    top: 10%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactInfo{
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+
+.contactItem{
+    text-align: center;
+    text-wrap: wrap;
+    opacity: .7;
+    margin-top: 5%;
+    font-family: 'PressStart';
+    font-size:8px;
+}
+
+.footer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 8px;
+    position: absolute;
+    z-index: 10;
+    height: auto;
+    bottom: 0%;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.hosted {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cfIcon{
+    filter: invert(100%);
+    margin-left: 5px;
+}
+
+@media(min-width: 300px){
+    .footer{
+        flex-direction: column;
+        bottom: 2%;
+        justify-self: center;
+    }
+}
+@media(min-width: 400px){
+    .title{
+        font-size: 36px;
+    }
+    .contactInfo{
+        margin-top:0%;
+    }
+}
+@media(min-width: 550px){
+    .contactItem{
+        font-size:10px;
+    }
+    .footer{
+        font-size: 12px;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 42px;
+    }
+}
+
+@media(min-width: 750px){
+    .containerMain{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        align-self: center;
+        top:2%;
+        font-size: 48px;
+    }
+    .containerInner{
+        flex-direction: row;
+        padding: 0 5%;
+    }
+    .contactInfo{
+        height: 50%;
+        margin-bottom: 0;
+    }
+    .contactItem{
+        font-size:12px;
+    }
+    .footer{
+        bottom: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 10px;
+        width: 90%;
+    }
+    .hosted {
+        display: flex;
+    }
+}
+
+@media(min-width: 1200px){
+    .contactItem{
+        font-size:14px;
+    }
+    .contactInfo{
+        height: 30%;
+    }
+}
+@media(min-width: 1600px){
+    .containerInner{
+        padding: 0 10% 0 15%;
+    }
+    .title{
+        top:0%;
+        font-size: 84px;
+    }
+}
