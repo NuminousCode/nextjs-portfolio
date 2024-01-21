@@ -19,7 +19,7 @@ const Experience = (data) => {
 
   useIntersectionObserver([titleRef1, titleRef2], 1, 1500)
   useIntersectionObserver([itemRef1, itemRef2, cvRef], 1, 2500)
-  useImageIntersectionObserver([imageRef], .2)
+  useImageIntersectionObserver([imageRef], .2, 500)
   useFilterIntersectionObserver([imageRef], .5, 4500)
   useDynamicIconSize([`.${styles.icon}`], 300, 5, 0.02);
   useDynamicIconSize([`.${styles.git}`], 300, 15, 0.04);
