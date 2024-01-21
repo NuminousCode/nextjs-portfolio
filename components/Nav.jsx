@@ -22,7 +22,7 @@ const Nav = (data) => {
     }, []); // Empty dependency array means this effect runs once on mount
 
     return (
-        <button id="backToTopBtn" className={styles.backToTopBtn} onClick={scrollToTop}><img src={upUrl} alt="" className={styles.imageBtn}/></button>
+        <button id="backToTopBtn" className={styles.backToTopBtn} onClick={scrollToTop}><img src={upUrl} alt="image" className={styles.imageBtn}/></button>
     );
 };
 

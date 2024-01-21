@@ -40,13 +40,13 @@ const Hero = (data) => {
           onChange={(e) => handleCheckboxChange(e.target.checked)}
         />
         <label htmlFor="openMenu">
-          <img src={menuIcon} alt="" className = {`${styles.menuIcon} ${menuInactive}`}/> 
-          <img src={menuClosed} alt="" className = {`${styles.menuClosed} ${menuActive}`}/> 
+          <img src={menuIcon} alt="image" className = {`${styles.menuIcon} ${menuInactive}`}/> 
+          <img src={menuClosed} alt="image" className = {`${styles.menuClosed} ${menuActive}`}/> 
         </label>
       </div>
       <div className = {`${styles.slogan} ${classChecked}`}>MODERN WEB DEVELOPMENT</div>
       <Menu className = {menuClassName}/>
-      <img src={imgUrl} alt="" className = {styles.image}/>
+      <img src={imgUrl} alt="image" className = {styles.image}/>
     </div>
   )
 }

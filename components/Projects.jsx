@@ -54,7 +54,7 @@ const Projects = (data) => {
                     <img
                         className={styles.cardImg}
                         src={newsUrl}
-                        alt=""
+                        alt="image"
                     />
                 </label>
                 <label className={styles.card} htmlFor="item2" id={styles.card2}>
@@ -70,7 +70,7 @@ const Projects = (data) => {
                     <img
                         className={styles.cardImg}
                         src={forestUrl}
-                        alt=""
+                        alt="image"
                     />
                 </label>
                 <label className={styles.card} htmlFor="item3" id={styles.card3}>
@@ -85,13 +85,13 @@ const Projects = (data) => {
                     <img
                         className={styles.cardImg}
                         src={servicesUrl}
-                        alt=""
+                        alt="image"
                     />
                 </label>
             </div>
         </div>
       </div>
-      <img src={imgUrl} alt="" className={styles.image} ref={imageRef} />
+      <img src={imgUrl} alt="image" className={styles.image} ref={imageRef} />
     </div>
   );
 }

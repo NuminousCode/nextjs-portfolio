@@ -16,7 +16,7 @@ const About = (data) => {
     <div className = {styles.containerMain} id="about">
       <div className = {styles.title} ref={titleRef}>About</div>
       <Terminal />
-      <img src={imgUrl} alt="" className = {styles.image} ref={imageRef}/>
+      <img src={imgUrl} alt="image" className = {styles.image} ref={imageRef}/>
     </div>
   )
 }

@@ -36,7 +36,7 @@ const Experience = (data) => {
           <div className = {styles.item} ref={itemRef1}>Associate - Infosys · '21–'22</div>
           <div className ={styles.cv} ref={cvRef}>
             <div>CV</div>
-            <a href="https://docs.google.com/document/d/1OwzZzqCRPQMq6j-6Fw8D2yg2M_-q08pFZO61wNdNMvA/export?format=pdf" download="cv.pdf" className ={styles.link}><img src={iconUrl} alt="" className ={styles.icon}/></a>
+            <a href="https://docs.google.com/document/d/1OwzZzqCRPQMq6j-6Fw8D2yg2M_-q08pFZO61wNdNMvA/export?format=pdf" download="cv.pdf" className ={styles.link}><img src={iconUrl} alt="image" className ={styles.icon}/></a>
           </div>
         </div>
 
@@ -44,12 +44,12 @@ const Experience = (data) => {
           <div className = {styles.title} ref={titleRef2}>Connect</div>
           <div className = {styles.item} ref={itemRef2}>
             <div>Github</div>
-            <img src={gitUrl} alt="" className ={styles.git}/>
+            <img src={gitUrl} alt="image" className ={styles.git}/>
           </div>
         </div>
 
       </div>
-      <img src={imgUrl} alt="" className = {styles.image} ref={imageRef}/>
+      <img src={imgUrl} alt="image" className = {styles.image} ref={imageRef}/>
     </div>
   )
 }

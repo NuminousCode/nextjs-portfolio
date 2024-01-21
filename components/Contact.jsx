@@ -21,9 +21,9 @@ const Contact = (data) => {
           </div>
           <div className ={styles.footer}>
             <div className = {styles.copyright}>© 2023 Magis Web Services. All Rights Reserved.</div>
-            <div className = {styles.hosted}>Hosted on cloudflare <img src={cloudflareUrl} alt="" className = {styles.cfIcon}/></div>
+            <div className = {styles.hosted}>Hosted on cloudflare <img src={cloudflareUrl} alt="image" className = {styles.cfIcon}/></div>
           </div>
-      <img src={imgUrl} alt="" className = {styles.image}/>
+      <img src={imgUrl} alt="image" className = {styles.image}/>
     </div>
   )
 }

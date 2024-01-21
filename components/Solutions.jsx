@@ -22,7 +22,7 @@ const Solutions = (data) => {
       <div className = {styles.title} ref={titleRef}>Responsive Full-Stack Applications</div>
       <div className = {styles.builtWith} ref={builtRef}>Built With</div>
       <Ticker data= {data.data}/>
-      <img src={imgUrl} alt="" className={styles.image} ref={imgRef} />
+      <img src={imgUrl} alt="image" className={styles.image} ref={imgRef} />
     </div>
   );
 };
