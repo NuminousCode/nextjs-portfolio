@@ -31,8 +31,8 @@ const fileContents = fs.readFileSync(filePath, 'utf8');
 const imgIds = JSON.parse(fileContents);
 
   const imgUrls = [];
-  const accessToken = 'tB7F-mUWmn1dxWECof7Jnq7G_SfXUqreWmM6oG4KvK8';
-  const spaceId = 'vdnl4md1xpsv';
+  const accessToken = process.env.ACCESS_TOKEN;
+  const spaceId = process.env.SPACE_ID;
 
   for (const imgId of Object.values(imgIds[0])) {
     const url = `https://cdn.contentful.com/spaces/${spaceId}/assets/${imgId}?access_token=${accessToken}`;
