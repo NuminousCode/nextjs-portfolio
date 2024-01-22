@@ -169,7 +169,7 @@ Media Queries
 }
 @media(min-width: 1600px){
     .containerInner{
-        padding: 0 10% 0 15%;
+        padding: 2% 15% 0 15%;
     }
     .title{
         top:0%;

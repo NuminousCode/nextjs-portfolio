@@ -22,10 +22,10 @@ const Experience = (data) => {
   const gitUrl = data.data[34]
 
   // Custom hooks
-  useIntersectionObserver([titleRef1, titleRef2], 1, 1500)
-  useIntersectionObserver([itemRef1, itemRef2, cvRef], 1, 2500)
-  useImageIntersectionObserver([imageRef], .2, 500)
-  useFilterIntersectionObserver([imageRef], .5, 4500)
+  useIntersectionObserver([titleRef1, titleRef2], 1, 1000)
+  useIntersectionObserver([itemRef1, itemRef2, cvRef], 1, 2000)
+  useImageIntersectionObserver([imageRef], .2, 200)
+  useFilterIntersectionObserver([imageRef], .5, 4000)
   useDynamicIconSize([`.${styles.icon}`], 300, 5, 0.02);
   useDynamicIconSize([`.${styles.git}`], 300, 15, 0.04);
   useDynamicFontSize([`.${styles.title}`], 16, 100, 0.04);
@@ -46,7 +46,7 @@ const Experience = (data) => {
         </div>
 
         <div className = {styles.bucket}>
-          <div className = {styles.title} ref={titleRef2}>Connect</div>
+          <div className = {styles.title} ref={titleRef2}>SOURCE CODE</div>
           <div className = {styles.item} ref={itemRef2}>
             <div>Github</div>
             <img src={gitUrl} alt="image" className ={styles.git}/>
