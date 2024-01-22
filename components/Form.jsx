@@ -22,7 +22,6 @@ const FormComponent = () => {
     // Handle form submit
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
     };
 
     return (
