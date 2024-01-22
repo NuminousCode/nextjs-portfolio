@@ -96,7 +96,7 @@ const Ticker = (data) => {
                 </div>
                 <div className={styles.item}>
                     <img src={mongoUrl} alt="MongoDB" className={styles.invertIcon} />
-                    <div>MongoDB</div>
+                    <div>Mongo DB</div>
                 </div>
                 <div className={styles.item}>
                     <img src={mongooseUrl} alt="Mongoose" className={styles.invertIcon} />
@@ -182,7 +182,7 @@ const Ticker = (data) => {
                 </div>
                 <div className={styles.item}>
                     <img src={mongoUrl} alt="MongoDB" className={styles.invertIcon} />
-                    <div>MongoDB</div>
+                    <div>Mongo DB</div>
                 </div>
                 <div className={styles.item}>
                     <img src={mongooseUrl} alt="Mongoose" className={styles.invertIcon} />

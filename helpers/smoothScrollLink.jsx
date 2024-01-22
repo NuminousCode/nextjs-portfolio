@@ -34,17 +34,17 @@ const smoothScrollTo = (target, duration = 500) => {
     requestAnimationFrame(scroll);
 };
     //Initiate smooth scroll 
-const SmoothScrollLink = ({ to, duration, children }) => {
-    const handleClick = (e) => {
-        e.preventDefault();
-        smoothScrollTo(to, duration);
-    };
+    const SmoothScrollLink = ({ to, duration, children }) => {
+        const handleClick = (e) => {
+            e.preventDefault();
+            smoothScrollTo(to, duration);
+        };
 
-    return (
-        <a href={to} onClick={handleClick} className={styles.link}>
-            {children}
-        </a>
-    );
-};
+        return (
+            <a href={to} onClick={handleClick} className={styles.link}>
+                {children}
+            </a>
+        );
+    };
 
 export default SmoothScrollLink;
