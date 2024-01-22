@@ -1,3 +1,7 @@
+/*****************
+Custom Font Definitions
+******************/
+
 @font-face {
     font-family: 'Techno';
     src: url('../public/fonts/techno_hideo.ttf') format('truetype');

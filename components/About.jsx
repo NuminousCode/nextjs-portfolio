@@ -6,12 +6,19 @@ import useIntersectionObserver from '../helpers/useIntersectionObserver'
 import useImageIntersectionObserver from '../helpers/useImageIntersectionObserver'
 
 const About = (data) => {
+
+  // Image URL extraction
   const imgUrl = data.data[38]
+
+  // DOM elements references initializing 
   const imageRef = useRef(null);
   const titleRef = useRef(null);
+
+  // Custom hooks
   useDynamicFontSize([`.${styles.title}`], 36, 90, 0.06);
   useImageIntersectionObserver([imageRef], .2, 1000)
   useIntersectionObserver([titleRef], 1, 500)
+
     return (
     <div className = {styles.containerMain} id="about">
       <div className = {styles.title} ref={titleRef}>About</div>

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+// Dynamic Line Height Adjustment 
 const useDynamicLineHeight = (className, fraction) => {
     useEffect(() => {
         const handleResize = () => {

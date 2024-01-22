@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+// Dynamic left margin adjustment
 const useDynamicMargin = (className, fraction1) => {
     useEffect(() => {
 

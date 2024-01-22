@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+// Dynamic Top Margin Adjustment
 const useDynamicMargin = (className, fraction1) => {
     useEffect(() => {
 

@@ -1,3 +1,7 @@
+/*****************
+Contact Section 
+******************/
+
 .containerMain {
     display: flex;
     justify-content: center;
@@ -84,6 +88,11 @@
     filter: invert(100%);
     margin-left: 5px;
 }
+
+
+/*****************
+Media Queries
+******************/
 
 @media(min-width: 300px){
     .footer{

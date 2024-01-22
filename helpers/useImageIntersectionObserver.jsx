@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+// Modifies opacity property value based on object intersection
 const useImageIntersectionObserver = (refs, threshold, delay = 0) => {
     useEffect(() => {
         const observer = new IntersectionObserver(

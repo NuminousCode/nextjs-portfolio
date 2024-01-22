@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+// Dynamic Margin Adjustment 
 const useDynamicMarginTop = (className, fraction) => {
     useEffect(() => {
         const handleResize = () => {

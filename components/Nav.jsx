@@ -1,11 +1,16 @@
 import React, { useEffect } from 'react';
-import styles from '../styles/Nav.module.css'; // Assuming your CSS module is named Terminal.module.css
+import styles from '../styles/Nav.module.css'; 
 
 const Nav = (data) => {
+
+    // Extract image url
     const  upUrl= data.data[42]
+
+    
     useEffect(() => {
         const backToTopBtn = document.getElementById("backToTopBtn");
 
+        // Make scrollToTop appear when user scolls from top
         const handleScroll = () => {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 backToTopBtn.style.opacity = 1;
@@ -19,7 +24,7 @@ const Nav = (data) => {
 
         // Remove event listener on cleanup
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []); // Empty dependency array means this effect runs once on mount
+    }, []); 
 
     return (
         <button id="backToTopBtn" className={styles.backToTopBtn} onClick={scrollToTop}><img src={upUrl} alt="image" className={styles.imageBtn}/></button>

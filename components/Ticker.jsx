@@ -5,6 +5,7 @@ import useDynamicIconSize from "../helpers/dynamicIconSize";
 import useDynamicFontSize from "../helpers/dynamicFontSize";
 
 const Ticker = (data) => {
+    // Image URL extraction
     const nextIconUrl = data.data[6];
     const reactIconUrl = data.data[7];
     const angularIconUrl = data.data[11];
@@ -29,6 +30,7 @@ const Ticker = (data) => {
 
     const tickerRef = useRef(null)
 
+    // Custom hook invocation
     useDynamicIconSize([`.${styles.invertIcon}`], 200, 12, 0.05);
     useDynamicFontSize([`.${styles.item}`], 6, 50, 0.01);
     useImageIntersectionObserver([tickerRef], .2, 2000);

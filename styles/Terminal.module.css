@@ -1,3 +1,7 @@
+/*****************
+Terminal Styles
+******************/
+
 .containerMain {
     opacity: 0;
     top: 15%;
@@ -56,6 +60,10 @@
     animation: blink 0.7s infinite;
   }
 
+  /*****************
+Keyframe Animations 
+******************/
+
   @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
@@ -79,6 +87,9 @@
     }
   }
 
+  /*****************
+Media Query
+******************/
 
   @media(min-height: 600px){
     .terminal{

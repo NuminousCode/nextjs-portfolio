@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+// Dynamic Margin Adjustment for Menu Component 
 const useDynamicMarginMenu = (className, fraction) => {
     useEffect(() => {
 

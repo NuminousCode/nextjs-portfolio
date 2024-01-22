@@ -7,15 +7,21 @@ import useIntersectionObserver from '../helpers/useIntersectionObserver'
 import useImageIntersectionObserver from '../helpers/useImageIntersectionObserver'
 
 const Projects = (data) => {
+
+    // Image URL extractions
     const imgUrl = data.data[2]
     const newsUrl= data.data[40]
     const servicesUrl= data.data[41]
     const forestUrl= data.data[39]
+
+    // DOM elements references initializing 
     const imageRef = useRef(null);
     const responsive = useRef(null);
     const cont = useRef(null)
     const titleProjects = useRef(null);
     const carousel = useRef(null);
+
+    // Custom hooks
     useDynamicFontSize([`.${styles.label}`, `.${styles.title}`], 1, 0.035);
     useDynamicFontSize([`.${styles.item}`], 1, 0.035);
     useDynamicFontSize([`.${styles.responsive}`], 1, 0.050);
@@ -37,6 +43,7 @@ const Projects = (data) => {
       <div className={styles.containerProjects}>
         <div className={styles.projectsTitle} ref={titleProjects}>Projects</div>
         <div className={styles.carousel} ref={carousel}>
+            {/*Radio inputs for carousel card switching functionality*/}
             <input type="radio" name="slider" id="item1" className={styles.item1}defaultChecked />
             <input type="radio" name="slider" id="item2" className={styles.item2}/>
             <input type="radio" name="slider" id="item3" className={styles.item3}/>

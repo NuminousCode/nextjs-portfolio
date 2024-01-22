@@ -1,3 +1,7 @@
+/*****************
+Main Styles
+******************/
+
 .containerMain{
     display: flex;
     flex-direction: column;

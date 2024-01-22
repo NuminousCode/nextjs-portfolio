@@ -6,15 +6,20 @@ import useImageIntersectionObserver from "../helpers/useImageIntersectionObserve
 import useDynamicFontSize from "../helpers/dynamicFontSize";
 
 const Solutions = (data) => {
+
+  // Image URL extractions
   const imgUrl = data.data[35];
+  // DOM elements references initializing 
   const imgRef = useRef(null);
   const titleRef = useRef(null);
   const builtRef = useRef(null);
-  useImageIntersectionObserver([imgRef], 0.4);
-  useIntersectionObserver([titleRef], 1, 1000);
-  useIntersectionObserver([builtRef], 1, 1500);
-  useDynamicFontSize([`.${styles.title}`], 18, 100, 0.03);
-  useDynamicFontSize([`.${styles.builtWith}`], 16, 100, 0.022);
+
+  // Custom hook invocation
+    useImageIntersectionObserver([imgRef], 0.4);
+    useIntersectionObserver([titleRef], 1, 1000);
+    useIntersectionObserver([builtRef], 1, 1500);
+    useDynamicFontSize([`.${styles.title}`], 18, 100, 0.03);
+    useDynamicFontSize([`.${styles.builtWith}`], 16, 100, 0.022);
 
   return (
     <div className={styles.containerMain}>

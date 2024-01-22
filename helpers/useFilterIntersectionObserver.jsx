@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+// Modifies filter property value based on object intersection
 const useFilterIntersectionObserver = (refs, threshold, delay = 0) => {
     useEffect(() => {
         const observer = new IntersectionObserver(

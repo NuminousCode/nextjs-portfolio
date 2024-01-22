@@ -4,9 +4,13 @@ import useDynamicIconSize from '../helpers/dynamicIconSize'
 import Form from '../components/Form'
 
 const Contact = (data) => {
+    // Image URL extractions
     const imgUrl = data.data[28]
     const cloudflareUrl = data.data[32]
+
+    // Custom hook
     useDynamicIconSize([`.${styles.cfIcon}`], 300, 20, 0.02);
+
   return (
     <div className = {styles.containerMain} id="contact">
       <div className = {styles.contactAnchor}></div>

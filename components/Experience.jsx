@@ -7,16 +7,21 @@ import useDynamicIconSize from '../helpers/dynamicIconSize'
 import useDynamicFontSize from '../helpers/dynamicFontSize'
 
 const Experience = (data) => {
+
+  // DOM elements references initializing 
   const titleRef1 = useRef(null);
   const titleRef2 = useRef(null);
   const itemRef1 = useRef(null);
   const itemRef2 = useRef(null);
   const cvRef = useRef(null);
   const imageRef = useRef(null);
+
+  // Image URL extractions
   const imgUrl = data.data[5]
   const iconUrl = data.data[33]
   const gitUrl = data.data[34]
 
+  // Custom hooks
   useIntersectionObserver([titleRef1, titleRef2], 1, 1500)
   useIntersectionObserver([itemRef1, itemRef2, cvRef], 1, 2500)
   useImageIntersectionObserver([imageRef], .2, 500)

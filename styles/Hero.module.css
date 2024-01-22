@@ -1,3 +1,7 @@
+/*****************
+Hero Section 
+******************/
+
 .containerMain {
   position: relative;
   display: flex;
@@ -88,6 +92,10 @@
   transition: opacity 500ms ease;
 }
 
+/*****************
+Media Queries
+******************/
+
 @media(min-width: 200px) {
   .slogan {
     margin-top: 50%;
@@ -140,6 +148,10 @@
     font-size: 24px;
   }
 }
+
+/*****************
+Keyframe Animations 
+******************/
 
 @keyframes fadeInDown {
   from {

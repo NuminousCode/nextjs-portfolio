@@ -1,3 +1,7 @@
+/*****************
+Scroll-to-Top 
+******************/
+
 .backToTopBtn {
     opacity: 0;
     z-index: 10;
@@ -31,6 +35,10 @@
     background-color: #555;
 }
 
+
+/*****************
+Media Queries
+******************/
 @media(min-width: 750px){
     .imageBtn{
         width: 50px;

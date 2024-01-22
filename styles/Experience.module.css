@@ -1,3 +1,7 @@
+/*****************
+Experience Section 
+******************/
+
 .anchor {
     position: absolute;
     border: solid 1px red;
@@ -117,6 +121,10 @@
 .link {
     text-decoration: none;
 }
+
+/*****************
+Media Queries
+******************/
 
 @media(max-width:1000px) {
     .buckets>.bucket:nth-of-type(1) .item {

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+// Dynamic Icon Size Resizer 
 const useDynamicIconSize = (classNames, baseViewportWidth, baseSize, scaleFactor) => {
     useEffect(() => {
         const adjustSize = () => {
@@ -11,7 +12,6 @@ const useDynamicIconSize = (classNames, baseViewportWidth, baseSize, scaleFactor
             } else {
                 newSize = baseSize;
             }
-            console.log(newSize)
             classNames.forEach(className => {
                 const elements = document.querySelectorAll(className);
                 elements.forEach(element => {

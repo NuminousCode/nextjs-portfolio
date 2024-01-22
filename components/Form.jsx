@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styles from '../styles/Form.module.css';
 
 const FormComponent = () => {
+
+    // Form data state variable declaration
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -12,10 +14,12 @@ const FormComponent = () => {
         message: ''
     });
 
+    // Updates formData state with new values when input field is changed.
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+    // Handle form submit
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData);

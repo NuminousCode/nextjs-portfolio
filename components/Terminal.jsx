@@ -5,16 +5,20 @@ import useDynamicFontSize from '../helpers/dynamicFontSize';
 import styles from "../styles/Terminal.module.css";
 
 const Terminal = () => {
+
+    //  State variables initializing 
     const introTextContent = "Hi, my name is Gerardo.<br/>I ";
     const [introText, setIntroText] = useState('');
     const [introTyped, setIntroTyped] = useState(false);
-    const terminalRef = useRef(null)
     const [isTerminalVisible, setIsTerminalVisible] = useState(false);
     const [shouldStartTyping, setShouldStartTyping] = useState(false);
-
+    
+    // DOM element reference initializing 
+    const terminalRef = useRef(null)
+    
+    // Custom hooks
     useDynamicLeft([`.${styles.containerMain}`], 0.04);
     useDynamicFontSize([`.${styles.terminal}`], 8, 12, 0.012);
-
     useTerminalIntersectionObserver(
         [terminalRef], 
         1, 
@@ -27,6 +31,7 @@ const Terminal = () => {
          2500
     );
     
+    // String array for terminal display
     const items = [
         "build user interfaces.",
         "build and maintain database and server systems.",
@@ -36,11 +41,15 @@ const Terminal = () => {
         "build cross-platform applications.",
         "develop mobile-first applications."
     ];
+
+    //  State variables initializing for managing a typewriter effect
     const [count, setCount] = useState(0);
     const [index, setIndex] = useState(0);
     const [displayText, setDisplayText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
 
+
+    // useEffect hook to control the typing animation of the terminal.
     useEffect(() => {
         let timer;
 

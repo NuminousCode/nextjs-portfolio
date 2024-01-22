@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+// Modifies css property values based on object intersection
 const useIntersectionScale = (refs, threshold = 0.2) => {
     useEffect(() => {
         const observer = new IntersectionObserver(

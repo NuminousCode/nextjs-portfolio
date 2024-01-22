@@ -6,15 +6,16 @@ import useDynamicLineHeight from '../helpers/dynamicLineHeightMenu'
 import useDynamicMarginTop from '../helpers/dynamicMarginMenu'
 
 
-const Menu = ({className}) => {
+const Menu = () => {
 
+  //Custom hooks
   useDynamicFontSize([`.${styles.menuItem}`], 12, 60, 0.04);
   useDynamicLineHeight([`.${styles.containerMain}`], .08);
   useDynamicMarginTop([`.${styles.containerMain}`],0.01);
   
-  const menuClassName = styles[className]
   return (
-    <div className = {`${styles.containerMain} ${menuClassName}`}>
+    <div className = {styles.containerMain}>
+      {/*Animated smooth scrolling navigation menu.*/}
       <SmoothScrollLink to="#anchorSolutions" duration={2000}><div className = {styles.menuItem}>SOLUTIONS</div></SmoothScrollLink>
       <SmoothScrollLink to="#projects" duration={2500}><div className = {styles.menuItem}>PROJECTS</div></SmoothScrollLink>
       <SmoothScrollLink to="#about" duration={3500}><div className = {styles.menuItem}>ABOUT</div></SmoothScrollLink>

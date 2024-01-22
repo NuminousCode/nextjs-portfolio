@@ -1,3 +1,7 @@
+/*****************
+Ticker Styles
+******************/
+
 .containerMain{
     width: 100vw;
     opacity: 0;
@@ -33,6 +37,11 @@
 .invertIcon{
     filter: invert(100%);
 }
+
+/*****************
+Revert inversion filter 
+for select icson
+******************/
 .tickerContent2 > .item:nth-of-type(2) > .invertIcon,
 .tickerContent2 > .item:nth-of-type(6) > .invertIcon,
 .tickerContent2 > .item:nth-of-type(7) > .invertIcon,
@@ -66,18 +75,8 @@
     order: 2;
 }
 
-@keyframes ticker1 {
-    from {transform: translate3d(0vw,0,0);}
-    to {transform: translate3d(-300vw,0,0);}
-  }
-@keyframes ticker2 {
-    from {transform: translate3d(100vw,0,0);}
-    to {transform: translate3d(-200vw,0,0);}
-  }
-
-
-  .containerMain::before,
-  .containerMain::after {
+.containerMain::before,
+.containerMain::after {
     content: '';
     position: absolute;
     top: 0;
@@ -88,17 +87,29 @@
         to right, 
         rgba(255, 255, 255, 0),  
         rgba(0, 0, 0, 1)
-    );
-    pointer-events: none; 
-}
+        );
+        pointer-events: none; 
+    }
+    
+    .containerMain::before {
+        left: 0;
+        transform: rotateZ(180deg); 
+    }
+    
+    .containerMain::after {
+        right: 0;
+    }
+    
 
-.containerMain::before {
-    left: 0;
-    transform: rotateZ(180deg); 
-}
+/*****************
+Keyframe Animations
+******************/
 
-.containerMain::after {
-    right: 0;
-}
-
-
+    @keyframes ticker1 {
+        from {transform: translate3d(0vw,0,0);}
+        to {transform: translate3d(-300vw,0,0);}
+      }
+    @keyframes ticker2 {
+        from {transform: translate3d(100vw,0,0);}
+        to {transform: translate3d(-200vw,0,0);}
+      }
