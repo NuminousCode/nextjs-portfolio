@@ -17,7 +17,7 @@ const Terminal = () => {
     const terminalRef = useRef(null)
     
     // Custom hooks
-    useDynamicLeft([`.${styles.containerMain}`], 0.04);
+    // useDynamicLeft([`.${styles.containerMain}`], 0.04);
     useDynamicFontSize([`.${styles.terminal}`], 8, 12, 0.012);
     useTerminalIntersectionObserver(
         [terminalRef], 

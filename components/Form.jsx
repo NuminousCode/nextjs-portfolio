@@ -19,6 +19,7 @@ const FormComponent = () => {
 
     const emailRegex = /\S+@\S+\.\S+/;
 
+    // Updates formData state with new values when input field is changed.
     const handleChange = (e) => {
         const { name, value } = e.target;
             if (name === 'email') setEmailError('');
@@ -29,6 +30,7 @@ const FormComponent = () => {
         setFormData({ ...formData, [name]: value });
     };
 
+    // Validate required fields
     const validateForm = () => {
         const { firstName, lastName, email, phone, city, state, message } = formData;
         let errors = [];
@@ -46,6 +48,8 @@ const FormComponent = () => {
         }
         return true;
     };
+
+    // Handle form submit
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {

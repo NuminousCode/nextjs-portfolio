@@ -3,9 +3,8 @@ Terminal Styles
 ******************/
 
 .containerMain {
-    opacity: 0;
-    top: 15%;
-    left: 75%;
+    top: 60%;
+    margin-right: 20px;
     position: absolute;
     z-index: 10;
     width: 50%;
@@ -93,7 +92,22 @@ Media Query
 
   @media(min-height: 600px){
     .terminal{
-      line-height: 250%;
+      line-height: 200%;
     }
   }
+
+  @media(min-width: 1100px){
+  .containerMain{
+    width: 45%;
+    top: 20%;
+    right: -5%;
+  }
+  }
+  @media(min-width: 1600px){
+  .containerMain{
+    top: 15%;
+    right: -20%;
+  }
+  }
+
  
