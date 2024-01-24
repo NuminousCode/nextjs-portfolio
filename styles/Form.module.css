@@ -68,6 +68,22 @@
     margin-right: 10px;
 }
 
+.error{
+    color: #fb8500;
+    opacity: .7;
+    line-height: 10px;
+    align-self: center;
+    text-wrap: wrap;
+    margin-left: 10px;
+
+}
+
+.containerBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /*****************
 Media Queries
 ******************/
