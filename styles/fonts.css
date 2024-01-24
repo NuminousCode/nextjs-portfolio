@@ -15,12 +15,6 @@ Custom Font Definitions
     font-style: normal;
   }
 @font-face {
-    font-family: 'Nebula-Hollow';
-    src: url('../public/fonts/Nebula-Hollow.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-@font-face {
     font-family: 'Mechsuit';
     src: url('../public/fonts/Mechsuit.otf') format('opentype');
     font-weight: normal;
@@ -32,11 +26,6 @@ Custom Font Definitions
     font-weight: normal;
     font-style: normal;
   }
-@font-face {
-    font-family: 'Perfect';
-    src: url('../public/fonts/Perfect\ DOS\ VGA\ 437\ Win.ttf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
+
 
   
