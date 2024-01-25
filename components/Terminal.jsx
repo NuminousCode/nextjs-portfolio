@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import useTerminalIntersectionObserver from '../helpers/useTerminalIntersectionObserver';
-import useDynamicLeft from '../helpers/useDynamicLeft'
 import useDynamicFontSize from '../helpers/dynamicFontSize';
 import styles from "../styles/Terminal.module.css";
 
@@ -17,7 +16,6 @@ const Terminal = () => {
     const terminalRef = useRef(null)
     
     // Custom hooks
-    // useDynamicLeft([`.${styles.containerMain}`], 0.04);
     useDynamicFontSize([`.${styles.terminal}`], 8, 12, 0.012);
     useTerminalIntersectionObserver(
         [terminalRef], 
@@ -28,7 +26,7 @@ const Terminal = () => {
                 setShouldStartTyping(true);
             }, 1000); 
         }, 
-         2500
+         3500
     );
     
     // String array for terminal display

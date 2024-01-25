@@ -78,12 +78,10 @@
 
 }
 .confirmationMessage{
-    color: #33FF33;
-    opacity: .5;
-    line-height: 10px;
+    color: #a9d6e5;
+    line-height: 15px;
     align-self: center;
     text-wrap: wrap;
-    margin-left: 10px;
     font-size: 10px;
 }
 

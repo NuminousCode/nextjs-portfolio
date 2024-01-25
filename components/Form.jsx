@@ -4,7 +4,7 @@ import styles from '../styles/Form.module.css';
 
 const FormComponent = () => {
     const form = useRef()
-    const [submissionMessage, setSubmissionMessage] = useState('');
+    const [isSubmitted, setIsSubmitted] = useState(false);
     // Form data state variable declaration
     const [formData, setFormData] = useState({
         firstName: '',
@@ -77,11 +77,11 @@ const FormComponent = () => {
                 state: '',
                 message: ''
             });
-        setSubmissionMessage('Your form has been submitted successfully!');
-
-        setTimeout(() => {
-            setSubmissionMessage('');
-        }, 5000);
+            setIsSubmitted(true); // Set isSubmitted to true on successful submission
+                
+            setTimeout(() => {
+                setIsSubmitted(false); // Reset isSubmitted after 5 seconds
+            }, 5000);
 
         } (error) => {
             console.log('Form submission error:', error.text);
@@ -173,7 +173,11 @@ const FormComponent = () => {
                     Submit
                 </button>
                 {formErrors && <div className={styles.error}>{formErrors}</div>}
-                {submissionMessage && <div className={styles.confirmationMessage}>{submissionMessage}</div>}
+                {isSubmitted && 
+                    <div className={styles.confirmationMessage}>
+                        Thank you for your message! <br/>I'll contact you soon.
+                    </div>
+                }
                 </div>
             </form>
         </div>

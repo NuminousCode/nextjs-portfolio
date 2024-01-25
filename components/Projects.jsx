@@ -25,8 +25,8 @@ const Projects = (data) => {
     useDynamicFontSize([`.${styles.label}`, `.${styles.title}`], 1, 0.035);
     useDynamicFontSize([`.${styles.item}`], 1, 0.035);
     useDynamicFontSize([`.${styles.responsive}`], 1, 0.050);
-    useDynamicFontSize([`.${styles.projectsTitle}`], 20, 100, 0.03);
-    useDynamicFontSize([`.${styles.cardHeader}`], 12, 60, 0.03);
+    useDynamicFontSize([`.${styles.projectsTitle}`], 24, 100, 0.032);
+    useDynamicFontSize([`.${styles.cardHeader}`], 16, 60, 0.03);
     useDynamicFontSize([`.${styles.feature}`], 8, 16, 0.01);
     useDynamicIconSize([`.${styles.invertIcon}`], 300, 20, 0.04);
     useDynamicIconSize([`.${styles.vercelIcon}`], 300, 15, 0.018);

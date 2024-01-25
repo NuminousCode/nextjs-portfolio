@@ -71,10 +71,6 @@ const Ticker = (data) => {
                     <div>JavaScript</div>
                 </div>
                 <div className={styles.item}>
-                    <img src={cloudflareUrl} alt="Cloudflare" className={styles.invertIcon} />
-                    <div>Cloudflare</div>
-                </div>
-                <div className={styles.item}>
                     <img src={vercelUrl} alt="Vercel" className={styles.invertIcon} />
                     <div>Vercel</div>
                 </div>
@@ -105,6 +101,10 @@ const Ticker = (data) => {
                 <div className={styles.item}>
                     <img src={efCoreUrl} alt=".NET" className={styles.invertIcon} />
                     <div>.NET</div>
+                </div>
+                <div className={styles.item}>
+                    <img src={cloudflareUrl} alt="Cloudflare" className={styles.invertIcon} />
+                    <div>Cloudflare</div>
                 </div>
                 <div className={styles.item}>
                     <img src={javaUrl} alt="Java" className={styles.invertIcon} />
@@ -157,10 +157,6 @@ const Ticker = (data) => {
                     <div>JavaScript</div>
                 </div>
                 <div className={styles.item}>
-                    <img src={cloudflareUrl} alt="Cloudflare" className={styles.invertIcon} />
-                    <div>Cloudflare</div>
-                </div>
-                <div className={styles.item}>
                     <img src={vercelUrl} alt="Vercel" className={styles.invertIcon} />
                     <div>Vercel</div>
                 </div>
@@ -191,6 +187,10 @@ const Ticker = (data) => {
                 <div className={styles.item}>
                     <img src={efCoreUrl} alt=".NET" className={styles.invertIcon} />
                     <div>.NET</div>
+                </div>
+                <div className={styles.item}>
+                    <img src={cloudflareUrl} alt="Cloudflare" className={styles.invertIcon} />
+                    <div>Cloudflare</div>
                 </div>
                 <div className={styles.item}>
                     <img src={javaUrl} alt="Java" className={styles.invertIcon} />

@@ -3,7 +3,6 @@ import styles from '../styles/About.module.css'
 import Terminal from '../components/Terminal'
 import useDynamicFontSize from '../helpers/dynamicFontSize'
 import useDynamicIconSize from '../helpers/dynamicIconSize'
-import useDynamicMarginBottom from '../helpers/useDynamicMarginBottom'
 import useIntersectionObserver from '../helpers/useIntersectionObserver'
 import useImageIntersectionObserver from '../helpers/useImageIntersectionObserver'
 
@@ -17,13 +16,12 @@ const About = (data) => {
   const imageRef = useRef(null);
   const titleRef = useRef(null);
   const headshotRef = useRef(null);
-
+  
   // Custom hooks
   useDynamicFontSize([`.${styles.title}`], 36, 90, 0.06);
   useImageIntersectionObserver([imageRef], .2, 1000)
   useDynamicIconSize([`.${styles.headshot}`], 300, 150, .25)
-  // useDynamicMarginBottom(`.${styles.headshot}`, .15)
-  // useImageIntersectionObserver([headshotRef], .2, 1000)
+  useIntersectionObserver([headshotRef], 1, 2000, .8)
   useIntersectionObserver([titleRef], 1, 500)
 
     return (

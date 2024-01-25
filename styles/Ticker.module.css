@@ -46,16 +46,15 @@ for select icson
 .tickerContent2 > .item:nth-of-type(6) > .invertIcon,
 .tickerContent2 > .item:nth-of-type(7) > .invertIcon,
 .tickerContent2 > .item:nth-of-type(8) > .invertIcon,
-.tickerContent2 > .item:nth-of-type(9) > .invertIcon,
+.tickerContent2 > .item:nth-of-type(12) > .invertIcon,
 .tickerContent2 > .item:nth-of-type(13) > .invertIcon,
-.tickerContent2 > .item:nth-of-type(14) > .invertIcon,
-.tickerContent2 > .item:nth-of-type(14) > .invertIcon, 
+.tickerContent2 > .item:nth-of-type(17) > .invertIcon,
 .tickerContent2 > .item:nth-of-type(20) > .invertIcon,
 .tickerContent2 > .item:nth-of-type(21) > .invertIcon 
 {
     filter: invert(0%)
 }
-
+.tickerContent1 > .item:nth-of-type(17) > .invertIcon,
 .tickerContent1 > .item:nth-of-type(20) > .invertIcon,
 .tickerContent1 > .item:nth-of-type(21) > .invertIcon
 {

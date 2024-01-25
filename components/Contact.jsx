@@ -6,7 +6,7 @@ import Form from '../components/Form'
 const Contact = (data) => {
     // Image URL extractions
     const imgUrl = data.data[28]
-    const cloudflareUrl = data.data[32]
+    const cloudflareUrl = data.data[26]
 
     // Custom hook
     useDynamicIconSize([`.${styles.cfIcon}`], 300, 20, 0.02);
@@ -19,7 +19,7 @@ const Contact = (data) => {
             <Form />
             <div className = {styles.contactInfo}>
               <div className = {styles.contactItem}>email · contact@gerardosanchez.dev</div>
-              <div className = {styles.contactItem}>tel · 619-763-2197</div>
+              <div className = {styles.contactItem}>tel · 409-292-9017</div>
               <div className = {styles.contactItem}>loc · Katy, TX</div>
             </div>
           </div>

@@ -120,6 +120,7 @@ Experience Section
 
 .link {
     text-decoration: none;
+    color: white;
 }
 
 /*****************
@@ -145,10 +146,6 @@ Media Queries
     .buckets>.bucket:nth-of-type(1) {
         width: 40%;
     }
-}
-
-@media(min-width:300px) {
-    .buckets {}
 }
 
 @media(min-width:400px) {
