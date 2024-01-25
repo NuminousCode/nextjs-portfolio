@@ -39,7 +39,7 @@ About Section
   top: 20%;
   order: 2;
   filter: saturate(100%);
-  opacity: .6;
+  opacity: .7;
   position: absolute;
   object-fit: cover;
   width: 150px;

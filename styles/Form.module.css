@@ -77,6 +77,15 @@
     margin-left: 10px;
 
 }
+.confirmationMessage{
+    color: #33FF33;
+    opacity: .5;
+    line-height: 10px;
+    align-self: center;
+    text-wrap: wrap;
+    margin-left: 10px;
+    font-size: 10px;
+}
 
 .containerBtn{
     display: flex;

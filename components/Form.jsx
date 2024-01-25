@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import styles from '../styles/Form.module.css';
 
 const FormComponent = () => {
-
+    const form = useRef()
+    const [submissionMessage, setSubmissionMessage] = useState('');
     // Form data state variable declaration
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
+        company:'',
         email: '',
         phone: '',
         city: '',
@@ -40,7 +43,7 @@ const FormComponent = () => {
         if (!phone) errors.push('Phone');
         if (!city) errors.push('City');
         if (!state) errors.push('State');
-        if (message.length < 50) errors.push('Message (min 50 characters)');
+        if (!message) errors.push('Message');
 
         if (errors.length > 0) {
             setFormErrors(`Please fill the following fields: ${errors.join(', ')}.`);
@@ -49,17 +52,47 @@ const FormComponent = () => {
         return true;
     };
 
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+
     // Handle form submit
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
+            emailjs.sendForm(serviceId, templateId, form.current, publicKey).then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
             console.log('Form submitted:', formData);
-        }
+            setFormData({
+                firstName: '',
+                lastName: '',
+                company: '',
+                email: '',
+                phone: '',
+                city: '',
+                state: '',
+                message: ''
+            });
+        setSubmissionMessage('Your form has been submitted successfully!');
+
+        setTimeout(() => {
+            setSubmissionMessage('');
+        }, 5000);
+
+        } (error) => {
+            console.log('Form submission error:', error.text);
+        
+            setSubmissionMessage('Failed to send the message. Please try again.');
+        };
     };
 
     return (
         <div className={styles.formContainer}>
-            <form onSubmit={handleSubmit} className = {styles.form}>
+            <form ref={form} onSubmit={handleSubmit} className = {styles.form}>
                 <input 
                     type="text" 
                     name="firstName" 
@@ -80,9 +113,9 @@ const FormComponent = () => {
                 />
                 <input 
                     type="text" 
-                    name="Company" 
-                    placeholder="Company" 
-                    value={formData.company} 
+                    name="email" 
+                    placeholder="Email" 
+                    value={formData.email} 
                     onChange={handleChange} 
                     maxLength="20"
                     className={styles.inputField} 
@@ -90,7 +123,7 @@ const FormComponent = () => {
                 <div className = {styles.containerContact}>
                 <input 
                     type="text" 
-                    name="City" 
+                    name="city" 
                     placeholder="City" 
                     value={formData.city} 
                     onChange={handleChange} 
@@ -99,7 +132,7 @@ const FormComponent = () => {
                 />
                 <input 
                     type="text" 
-                    name="State" 
+                    name="state" 
                     placeholder="State" 
                     value={formData.state} 
                     onChange={handleChange} 
@@ -110,7 +143,7 @@ const FormComponent = () => {
                 <div className ={styles.containerContact}>
                 <input 
                     type="text" 
-                    name="Phone" 
+                    name="phone" 
                     placeholder="Phone" 
                     value={formData.phone} 
                     onChange={handleChange} 
@@ -119,9 +152,9 @@ const FormComponent = () => {
                 />
                 <input 
                     type="text" 
-                    name="Email" 
-                    placeholder="Email" 
-                    value={formData.email} 
+                    name="company" 
+                    placeholder="Company" 
+                    value={formData.company} 
                     onChange={handleChange} 
                     maxLength="20"
                     className={styles.inputField} 
@@ -140,6 +173,7 @@ const FormComponent = () => {
                     Submit
                 </button>
                 {formErrors && <div className={styles.error}>{formErrors}</div>}
+                {submissionMessage && <div className={styles.confirmationMessage}>{submissionMessage}</div>}
                 </div>
             </form>
         </div>
