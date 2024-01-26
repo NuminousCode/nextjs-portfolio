@@ -56,10 +56,10 @@ const Projects = (data) => {
             <div className={styles.cardContent}>
               <h1 className={styles.cardHeader}>NEWS</h1>
               <div className={styles.features}>
-                <div className={styles.feature}>next.js</div>
-                <div className={styles.feature}>HCMS</div>
-                <div className={styles.feature}>nosql serverless</div>
-                <div className={styles.feature}>Node.Js</div>
+                <div className={styles.feature}>next.js  |</div>
+                <div className={styles.feature}>Node.Js |</div>
+                <div className={styles.feature}>HCMS  |</div>
+                <div className={styles.feature}>mongo-db serverless</div>
               </div>
             <img className={styles.cardImg} src={newsUrl} alt="image" />
             </div>
@@ -82,10 +82,10 @@ const Projects = (data) => {
             <div className={styles.cardContent}>
               <h1 className={styles.cardHeader}>NoSql CRUD</h1>
               <div className={styles.features}>
-                <div className={styles.feature}>html css js</div>
-                <div className={styles.feature}>Node.js</div>
-                <div className={styles.feature}>mongo db</div>
-                <div className={styles.feature}>mongoose</div>
+                <div className={styles.feature}>Node.js |</div>
+                <div className={styles.feature}>mongo-db |</div>
+                <div className={styles.feature}>mongoose |</div>
+                <div className={styles.feature}>Bootstrap</div>
               </div>
             <img className={styles.cardImg} src={forestUrl} alt="image"/>
             </div>
@@ -106,10 +106,10 @@ const Projects = (data) => {
              onClick={(e) => { if (activeCard !== 'item3') e.preventDefault(); }}
           >
             <div className={styles.cardContent}>
-              <h1 className={styles.cardHeader}>Forestry</h1>
+              <h1 className={styles.cardHeader}>Nature</h1>
               <div className={styles.features}>
-                <div className={styles.feature}>html</div>
-                <div className={styles.feature}>css</div>
+                <div className={styles.feature}>html |</div>
+                <div className={styles.feature}>css |</div>
                 <div className={styles.feature}>js</div>
               </div>
               <img className={styles.cardImg} src={servicesUrl} alt="image"/>

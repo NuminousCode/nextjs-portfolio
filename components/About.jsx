@@ -19,10 +19,10 @@ const About = (data) => {
   
   // Custom hooks
   useDynamicFontSize([`.${styles.title}`], 36, 90, 0.06);
-  useImageIntersectionObserver([imageRef], .2, 1000)
+  useImageIntersectionObserver([imageRef], .2, 500)
   useDynamicIconSize([`.${styles.headshot}`], 300, 150, .25)
-  useIntersectionObserver([headshotRef], 1, 2000, .8)
-  useIntersectionObserver([titleRef], 1, 500)
+  useIntersectionObserver([headshotRef], 1, 1500, .8)
+  useIntersectionObserver([titleRef], 1, 200)
 
     return (
     <div className = {styles.containerMain} id="about">

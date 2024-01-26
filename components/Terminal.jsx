@@ -26,14 +26,14 @@ const Terminal = () => {
                 setShouldStartTyping(true);
             }, 1000); 
         }, 
-         3500
+         2500
     );
     
     // String array for terminal display
     const items = [
         "build user interfaces.",
         "build and maintain database and server systems.",
-        "integrate third-party services, CMS' and APIs.",
+        "integrate third-party services, and APIs.",
         "develop data-driven applications.",
         "design prototypes.",
         "build cross-platform applications.",

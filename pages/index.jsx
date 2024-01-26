@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import fs from 'fs'
 import path from 'path'
 import Nav from '../components/Nav'
@@ -10,10 +11,15 @@ import Contact from '../components/Contact'
 import Solutions from '../components/Solutions'
 import styles from '../styles/home.module.css'
 
+
 const Home = ({params}) => {
 const imgUrls = params.imgUrls
   return (
     <div className={styles.containerMain} >
+      <Head>
+      <link rel="icon" href="/GS.png" type="image/png"/>
+      <title>GerardoSanchez.dev</title>
+      </Head>
       <Hero data={imgUrls}/>
       <Solutions data={imgUrls}/>
       <Projects data={imgUrls}/>
