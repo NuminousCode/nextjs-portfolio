@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styles from '../styles/Projects.module.css'
 import useDynamicFontSize from '../helpers/dynamicFontSize';
 import useDynamicIconSize from '../helpers/dynamicIconSize';
@@ -37,6 +37,87 @@ const Projects = (data) => {
     useImageIntersectionObserver([carousel], .2, 750)
     useIntersectionObserver([titleProjects], 1, 0, .8)
 
+    const [activeCard, setActiveCard] = useState('item1'); 
+    const handleRadioChange = (event) => {
+        setActiveCard(event.target.id);
+      };
+      const cardContent1 = (
+        <label className={styles.card} htmlFor="item1" id={styles.card1}>
+            {activeCard !== 'item1' && <div className={styles.cardOverlay}></div>}
+          <a href={activeCard === 'item1' ? "https://nextjs-news-site-3rgcd1vwh-numinouscode.vercel.app/" : "#"} 
+             target="_blank" 
+             className={styles.link} 
+             style={{
+               pointerEvents: activeCard === 'item1' ? 'auto' : 'none',
+               textDecoration: 'none'
+             }}
+             onClick={(e) => { if (activeCard !== 'item1') e.preventDefault(); }}
+          >
+            <div className={styles.cardContent}>
+              <h1 className={styles.cardHeader}>NEWS</h1>
+              <div className={styles.features}>
+                <div className={styles.feature}>next.js</div>
+                <div className={styles.feature}>HCMS</div>
+                <div className={styles.feature}>nosql serverless</div>
+                <div className={styles.feature}>Node.Js</div>
+              </div>
+            <img className={styles.cardImg} src={newsUrl} alt="image" />
+            </div>
+          </a>
+        </label>
+      );
+      
+      const cardContent2 = (
+        <label className={styles.card} htmlFor="item2" id={styles.card2}>
+            {activeCard !== 'item2' && <div className={styles.cardOverlay}></div>}
+            <a href={activeCard === 'item2' ? "https://nextjs-app-showcase.pages.dev/" : "#"} 
+                target="_blank" 
+                className={styles.link} 
+                style={{
+                pointerEvents: activeCard === 'item2' ? 'auto' : 'none',
+                textDecoration: 'none'
+                }}
+                onClick={(e) => { if (activeCard !== 'item2') e.preventDefault(); }}
+            >
+            <div className={styles.cardContent}>
+              <h1 className={styles.cardHeader}>NoSql CRUD</h1>
+              <div className={styles.features}>
+                <div className={styles.feature}>html css js</div>
+                <div className={styles.feature}>Node.js</div>
+                <div className={styles.feature}>mongo db</div>
+                <div className={styles.feature}>mongoose</div>
+              </div>
+            <img className={styles.cardImg} src={forestUrl} alt="image"/>
+            </div>
+          </a>
+        </label>
+      );
+      
+      const cardContent3 = (
+        <label className={styles.card} htmlFor="item3" id={styles.card3}>
+            {activeCard !== 'item3' && <div className={styles.cardOverlay}></div>}
+          <a href={activeCard === 'item3' ? "https://fundamentals-conservation-site.pages.dev/" : "#"} 
+             target="_blank" 
+             className={styles.link} 
+             style={{
+               pointerEvents: activeCard === 'item3' ? 'auto' : 'none',
+               textDecoration: 'none'
+             }}
+             onClick={(e) => { if (activeCard !== 'item3') e.preventDefault(); }}
+          >
+            <div className={styles.cardContent}>
+              <h1 className={styles.cardHeader}>Forestry</h1>
+              <div className={styles.features}>
+                <div className={styles.feature}>html</div>
+                <div className={styles.feature}>css</div>
+                <div className={styles.feature}>js</div>
+              </div>
+              <img className={styles.cardImg} src={servicesUrl} alt="image"/>
+            </div>
+          </a>
+        </label>
+      );
+      
   return (
     <div className={styles.containerMain}>
         <div  className = {styles.projectsAnchor} id="projects"></div>
@@ -44,58 +125,16 @@ const Projects = (data) => {
         <div className={styles.projectsTitle} ref={titleProjects}>Projects</div>
         <div className={styles.carousel} ref={carousel}>
             {/*Radio inputs for carousel card switching functionality*/}
-            <input type="radio" name="slider" id="item1" className={styles.item1}defaultChecked />
-            <input type="radio" name="slider" id="item2" className={styles.item2}/>
-            <input type="radio" name="slider" id="item3" className={styles.item3}/>
+            <input type="radio" name="slider" id="item1" className={styles.item1} defaultChecked onChange={handleRadioChange} />
+            <input type="radio" name="slider" id="item2" className={styles.item2} onChange={handleRadioChange}/>
+            <input type="radio" name="slider" id="item3" className={styles.item3} onChange={handleRadioChange}/>
+
             <div className={styles.cards}>
-                <label className={styles.card} htmlFor="item1" id={styles.card1}>
-                    <div className = {styles.cardContent}>
-                        <h1 className={styles.cardHeader}>NEWS</h1>
-                        <div className={styles.features}>
-                            <div className = {styles.feature}>next.js</div>
-                            <div className = {styles.feature}>HCMS</div>
-                            <div className = {styles.feature}>nosql serverless</div>
-                            <div className = {styles.feature}>Node.Js</div>
-                            </div>
-                    </div>
-                    <img
-                        className={styles.cardImg}
-                        src={newsUrl}
-                        alt="image"
-                    />
-                </label>
-                <label className={styles.card} htmlFor="item2" id={styles.card2}>
-                    <div className = {styles.cardContent}>
-                        <h1 className={styles.cardHeader}>NoSql CRUD</h1>
-                        <div className={styles.features}>
-                            <div className = {styles.feature}>html css js</div>
-                            <div className = {styles.feature}>Node.js</div>
-                            <div className = {styles.feature}>mongo db</div>
-                            <div className = {styles.feature}>mongoose</div>
-                            </div>
-                    </div>
-                    <img
-                        className={styles.cardImg}
-                        src={forestUrl}
-                        alt="image"
-                    />
-                </label>
-                <label className={styles.card} htmlFor="item3" id={styles.card3}>
-                <div className = {styles.cardContent}>
-                        <h1 className={styles.cardHeader}>Forestry</h1>
-                        <div className={styles.features}>
-                            <div className = {styles.feature}>html</div>
-                            <div className = {styles.feature}>css</div>
-                            <div className = {styles.feature}>js</div>
-                            </div>
-                    </div>
-                    <img
-                        className={styles.cardImg}
-                        src={servicesUrl}
-                        alt="image"
-                    />
-                </label>
+                {cardContent1}
+                {cardContent2}
+                {cardContent3}
             </div>
+
         </div>
       </div>
       <img src={imgUrl} alt="image" className={styles.image} ref={imageRef} />
