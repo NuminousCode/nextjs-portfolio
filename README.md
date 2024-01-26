@@ -6,6 +6,7 @@ The integration of Contentful CMS delivers media content, including images, via 
 
 The responsive design of the portfolio guarantees a smooth and engaging user experience on a variety of devices. Additionally, the application leverages Next.js's robust SEO features to improve the site's visibility on search engines. Designed with precision, the portfolio showcases professional skills and projects in a user-friendly interface.
 
+Deployed on Cloudflare
 
 ## Installation
 
