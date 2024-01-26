@@ -57,9 +57,9 @@ const Projects = (data) => {
               <h1 className={styles.cardHeader}>NEWS</h1>
               <div className={styles.features}>
                 <div className={styles.feature}>next.js  |</div>
-                <div className={styles.feature}>Node.Js |</div>
                 <div className={styles.feature}>HCMS  |</div>
-                <div className={styles.feature}>mongo-db serverless</div>
+                <div className={styles.feature}>Node.Js |</div>
+                <div className={styles.feature}>serverless mongo-db</div>
               </div>
             <img className={styles.cardImg} src={newsUrl} alt="image" />
             </div>
