@@ -20,8 +20,8 @@ The responsive design of the portfolio guarantees a smooth and engaging user exp
 ### Clone the Repository
 
 ```bash
-git clone 
-cd your-repo-name
+git clone https://github.com/NuminousCode/nextjs-portfolio.git
+cd nextjs-portfolio
 ```
 Use the package manager [npm](https://www.npmjs.com/) to install dependencies.
 
