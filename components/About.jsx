@@ -12,6 +12,9 @@ const About = (data) => {
   const imgUrl = data.data[38]
   const headshotUrl = data.data[32]
 
+  const formatedCmsUrl = data ? `${imgUrl}?fm=webp&w=2000&h=2000`: null;
+  const formatedHeadshotUrl = data ? `${headshotUrl}?fm=webp&w=500&h=500`: null;
+
   // DOM elements references initializing 
   const imageRef = useRef(null);
   const titleRef = useRef(null);
@@ -27,9 +30,9 @@ const About = (data) => {
     return (
     <div className = {styles.containerMain} id="about">
       <div className = {styles.title} ref={titleRef}>About</div>
-      <img src={headshotUrl} alt="image" className = {styles.headshot} ref={headshotRef}/>
+      <img src={formatedHeadshotUrl} alt="image" className = {styles.headshot} ref={headshotRef}/>
       <Terminal className={styles.terminal}/>
-      <img src={imgUrl} alt="image" className = {styles.image} ref={imageRef}/>
+      <img src={formatedCmsUrl} alt="image" className = {styles.image} ref={imageRef}/>
     </div>
   )
 }

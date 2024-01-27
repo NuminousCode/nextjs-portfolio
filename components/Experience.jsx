@@ -21,6 +21,8 @@ const Experience = (data) => {
   const iconUrl = data.data[33]
   const gitUrl = data.data[34]
 
+  const formatedCmsUrl = data ? `${imgUrl}?fm=webp&w=2000&h=2000`: null;
+
   // Custom hooks
   useIntersectionObserver([titleRef1, titleRef2], 1, 1000)
   useIntersectionObserver([itemRef1, itemRef2, cvRef], 1, 2000)
@@ -59,7 +61,7 @@ const Experience = (data) => {
         </div>
 
       </div>
-      <img src={imgUrl} alt="image" className = {styles.image} ref={imageRef}/>
+      <img src={formatedCmsUrl} alt="image" className = {styles.image} ref={imageRef}/>
     </div>
   )
 }

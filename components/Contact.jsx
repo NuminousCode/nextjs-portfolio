@@ -7,6 +7,8 @@ const Contact = (data) => {
     // Image URL extractions
     const imgUrl = data.data[28]
     const cloudflareUrl = data.data[26]
+    
+    const formatedCmsUrl = data ? `${imgUrl}?fm=webp&w=2000&h=2000`: null;
 
     // Custom hook
     useDynamicIconSize([`.${styles.cfIcon}`], 300, 20, 0.02);
@@ -27,7 +29,7 @@ const Contact = (data) => {
             <div className = {styles.copyright}>© 2023 Magis Web Services. All Rights Reserved.</div>
             <div className = {styles.hosted}>Hosted on cloudflare <img src={cloudflareUrl} alt="image" className = {styles.cfIcon}/></div>
           </div>
-      <img src={imgUrl} alt="image" className = {styles.image}/>
+      <img src={formatedCmsUrl} alt="image" className = {styles.image}/>
     </div>
   )
 }

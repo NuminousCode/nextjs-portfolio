@@ -9,6 +9,11 @@ const Solutions = (data) => {
 
   // Image URL extractions
   const imgUrl = data.data[35];
+
+  const formatedCmsUrl = data
+  ? `${imgUrl}?fm=webp&w=2000&h=1500`
+  : null;
+
   // DOM elements references initializing 
   const imgRef = useRef(null);
   const titleRef = useRef(null);
@@ -27,7 +32,7 @@ const Solutions = (data) => {
       <div className = {styles.title} ref={titleRef}>Responsive Full-Stack Applications</div>
       <div className = {styles.builtWith} ref={builtRef}>Built With</div>
       <Ticker data= {data.data}/>
-      <img src={imgUrl} alt="image" className={styles.image} ref={imgRef} />
+      <img src={formatedCmsUrl} alt="image" className={styles.image} ref={imgRef} />
     </div>
   );
 };
