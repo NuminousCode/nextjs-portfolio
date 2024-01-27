@@ -30,13 +30,13 @@ const Experience = (data) => {
   useFilterIntersectionObserver([imageRef], .5, 4000)
   useDynamicIconSize([`.${styles.icon}`], 300, 5, 0.02);
   useDynamicIconSize([`.${styles.git}`], 300, 15, 0.04);
-  useDynamicFontSize([`.${styles.title}`], 16, 100, 0.03);
+  useDynamicFontSize([`.${styles.title}`], 16, 100, 0.04);
   useDynamicFontSize([`.${styles.item}`, `.${styles.cv}`], 14, 100, 0.02);
 
   const githubUrl = "https://github.com/NuminousCode"
   return (
-    <div className = {styles.containerMain}>
-      <div className = {styles.anchor} id="experience"></div>
+    <div className = {styles.containerMain} id="experience">
+      <div className = {styles.anchor}></div>
 
       <div className ={styles.buckets}>
         <div className = {styles.bucket}>
