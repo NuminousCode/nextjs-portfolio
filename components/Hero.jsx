@@ -1,4 +1,5 @@
-import React, {useState} from 'react'  
+import React from 'react'  
+import Image from 'next/image'
 import Menu from './Menu'
 import styles from '../styles/Hero.module.css'
 import useDynamicIconSize from '../helpers/dynamicIconSize'
@@ -26,7 +27,7 @@ const Hero = (data) => {
       </div>
       <div className = {styles.slogan}>MODERN WEB DEVELOPMENT</div>
       <Menu />
-      <img src={imgUrl} alt="image" className = {styles.image}/>
+      <Image src={imgUrl} alt="image" className = {styles.image} width={500} height={500}/>
     </div>
   )
 }
