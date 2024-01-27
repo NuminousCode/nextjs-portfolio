@@ -11,15 +11,15 @@ const Projects = (data) => {
     // Image URL extractions
     const imgUrl = data.data[2]
     const newsUrl= data.data[40]
-    const dbUrl= data.data[41]
-    const natureUrl= data.data[39]
+    const natureUrl= data.data[41]
+    const dbUrl= data.data[39]
 
 
 
     const formatedBackgroundUrl = data ? `${imgUrl}?fm=webp&w=2000&h=3000`: null;
-    const formatedNewsUrl = data ? `${newsUrl}?fm=webp&w=700&h=500`: null;
-    const formatedDBUrl = data ? `${dbUrl}?fm=webp&w=700&h=500`: null;
-    const formatedNatureUrl = data ? `${natureUrl}?fm=webp&w=700&h=500`: null;
+    const formatedNewsUrl = data ? `${newsUrl}?fm=webp&w=750&h=1000`: null;
+    const formatedDBUrl = data ? `${dbUrl}?fm=webp&w=750&h=1000`: null;
+    const formatedNatureUrl = data ? `${natureUrl}?fm=webp&w=750&h=1000`: null;
 
     // DOM elements references initializing 
     const imageRef = useRef(null);
@@ -94,7 +94,7 @@ const Projects = (data) => {
                 <div className={styles.feature}>mongoose |</div>
                 <div className={styles.feature}>Bootstrap</div>
               </div>
-            <img className={styles.cardImg} src={formatedNatureUrl} alt="image"/>
+            <img className={styles.cardImg} src={formatedDBUrl} alt="image"/>
             </div>
           </a>
         </label>
@@ -119,7 +119,7 @@ const Projects = (data) => {
                 <div className={styles.feature}>css |</div>
                 <div className={styles.feature}>js</div>
               </div>
-              <img className={styles.cardImg} src={formatedDBUrl} alt="image"/>
+              <img className={styles.cardImg} src={formatedNatureUrl} alt="image"/>
             </div>
           </a>
         </label>
