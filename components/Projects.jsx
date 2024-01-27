@@ -113,7 +113,7 @@ const Projects = (data) => {
              onClick={(e) => { if (activeCard !== 'item3') e.preventDefault(); }}
           >
             <div className={styles.cardContent}>
-              <h1 className={styles.cardHeader}>Nature</h1>
+              <h1 className={styles.cardHeader}>Forests</h1>
               <div className={styles.features}>
                 <div className={styles.feature}>html |</div>
                 <div className={styles.feature}>css |</div>
