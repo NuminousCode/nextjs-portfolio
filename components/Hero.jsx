@@ -27,7 +27,7 @@ const Hero = (data) => {
       </div>
       <div className = {styles.slogan}>MODERN WEB DEVELOPMENT</div>
       <Menu />
-    <Image src={imgUrl} alt="image" className = {styles.image} width={2000} height={1000}/>
+      <img src={imgUrl} alt="image" className = {styles.image}/>
     </div>
   )
 }
