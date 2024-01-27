@@ -1,5 +1,4 @@
 import React from 'react'  
-import Image from 'next/image'
 import Menu from './Menu'
 import styles from '../styles/Hero.module.css'
 import useDynamicIconSize from '../helpers/dynamicIconSize'
@@ -11,8 +10,10 @@ const Hero = (data) => {
 
   // Image URL extraction
   const imgUrl = data.data[0]
-  const menuIcon = data.data[36]
-  const menuClosed = data.data[37]
+
+  const formatedCmsUrl = data
+  ? `${imgUrl}?fm=webp&w=2000&h=3000`
+  : null;
 
   // Custom hooks
   useDynamicIconSize([`.${styles.menuIcon}`, `.${styles.menuClosed}`], 300, 25, 0.055);
@@ -27,7 +28,7 @@ const Hero = (data) => {
       </div>
       <div className = {styles.slogan}>MODERN WEB DEVELOPMENT</div>
       <Menu />
-      <img src={imgUrl} alt="image" className = {styles.image}/>
+      <img src={formatedCmsUrl} alt="image" className = {styles.image}/>
     </div>
   )
 }
