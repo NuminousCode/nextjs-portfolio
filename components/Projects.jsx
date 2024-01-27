@@ -51,7 +51,7 @@ const Projects = (data) => {
       const cardContent1 = (
         <label className={styles.card} htmlFor="item1" id={styles.card1}>
             {activeCard !== 'item1' && <div className={styles.cardOverlay}></div>}
-          <a href={activeCard === 'item1' ? "https://nextjs-news-site-3rgcd1vwh-numinouscode.vercel.app/" : "#"} 
+          <a href={activeCard === 'item1' ? "https://nextjs-news-site-omega.vercel.app/" : "#"} 
              target="_blank" 
              className={styles.link} 
              style={{
