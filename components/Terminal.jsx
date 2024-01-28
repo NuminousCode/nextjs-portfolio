@@ -33,7 +33,7 @@ const Terminal = () => {
     const items = [
         "build user interfaces.",
         "build and maintain database and server systems.",
-        "integrate third-party services, and APIs.",
+        "integrate third-party services and APIs.",
         "develop data-driven applications.",
         "design prototypes.",
         "build cross-platform applications.",
