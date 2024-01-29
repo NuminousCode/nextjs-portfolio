@@ -47,7 +47,7 @@ Projects Section
 .projectsTitle {
   font-family: 'Mechsuit';
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(40px);
   height: auto;
   align-self: center;
   transition: opacity 4s ease-in-out, transform 2s ease-in-out
