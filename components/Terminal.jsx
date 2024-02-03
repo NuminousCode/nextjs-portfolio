@@ -16,7 +16,7 @@ const Terminal = () => {
     const terminalRef = useRef(null)
     
     // Custom hooks
-    useDynamicFontSize([`.${styles.terminal}`], 8, 12, 0.012);
+    useDynamicFontSize([`.${styles.terminal}`], 8, 14, 0.012);
     useTerminalIntersectionObserver(
         [terminalRef], 
         1, 

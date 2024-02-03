@@ -112,9 +112,13 @@ Media Query
   }
   @media(min-width: 1600px){
   .containerMain{
-    max-width: 450px;
+    max-width: 600px;
     top: 15%;
     right: -15%;
+    height: 400px;
+  }
+  .terminal{
+    padding: 25% 5% 0 12%;
   }
   }
 
