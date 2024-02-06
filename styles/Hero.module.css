@@ -67,7 +67,7 @@ Hero Section
   transform: translateY(-20px);
   font-family: 'Techno';
   z-index: 10;
-  font-size: 24px;
+  font-size: 36px;
   animation: fadeInDown 2s ease-in-out forwards;
   transition: font-size 500ms ease, margin 500ms ease, opacity 500ms ease;
 }
@@ -140,12 +140,29 @@ Media Queries
     margin-top: 20%;
     font-size: 24px;
   }
+  .logo{
+    font-size: 48px;}
 }
 
 @media(min-width: 650px) {
   .slogan {
     margin-top: 15%;
     font-size: 24px;
+  }
+}
+@media(min-width: 750px) {
+  .logo{
+    font-size: 56px;
+  }
+}
+@media(min-width: 1200px) {
+  .logo{
+    font-size: 64px;
+  }
+}
+@media(min-width: 1400px) {
+  .logo{
+    font-size: 78px;
   }
 }
 
