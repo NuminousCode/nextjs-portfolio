@@ -17,7 +17,6 @@ const Hero = (data) => {
 
   // Custom hooks
   useDynamicIconSize([`.${styles.menuIcon}`, `.${styles.menuClosed}`], 300, 25, 0.055);
-  // useDynamicFontSize([`.${styles.logo}`], 24, 80, 0.07);
   useDynamicFontSize([`.${styles.slogan}`], 20, 100, 0.052);
   useDynamicLineHeight([`.${styles.slogan}`], 0.03);
 

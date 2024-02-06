@@ -33,7 +33,7 @@ const Ticker = (data) => {
     // Custom hook invocation
     useDynamicIconSize([`.${styles.invertIcon}`], 200, 12, 0.05);
     useDynamicFontSize([`.${styles.item}`], 6, 50, 0.01);
-    useImageIntersectionObserver([tickerRef], .2, 2000);
+    useImageIntersectionObserver([tickerRef], .2, 1250);
 
     return (
         <div className={styles.containerMain} ref={tickerRef}>
