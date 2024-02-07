@@ -38,7 +38,7 @@ Solutions Section
   max-width: 80%;
   align-self: center;
   z-index: 10;
-  transition: opacity 1s ease-in-out
+  transition: opacity 2s ease-in-out
 }
 
 .builtWith {
@@ -49,7 +49,7 @@ Solutions Section
   max-width: 50%;
   align-self: center;
   z-index: 10;
-  transition: opacity 1s ease-in-out
+  transition: opacity 2s ease-in-out
 }
 
 /*****************
