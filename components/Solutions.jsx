@@ -21,8 +21,8 @@ const Solutions = (data) => {
 
   // Custom hook invocation
     useImageIntersectionObserver([imgRef], 0.2);
-    useIntersectionObserver([titleRef], 1, 500);
-    useIntersectionObserver([builtRef], 1, 1000);
+    useIntersectionObserver([titleRef], 1, 0);
+    useIntersectionObserver([builtRef], 1, 250);
     useDynamicFontSize([`.${styles.title}`], 18, 100, 0.03);
     useDynamicFontSize([`.${styles.builtWith}`], 16, 100, 0.022);
 

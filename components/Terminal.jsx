@@ -26,7 +26,7 @@ const Terminal = () => {
                 setShouldStartTyping(true);
             }, 1000); 
         }, 
-         2500
+         1000
     );
     
     // String array for terminal display

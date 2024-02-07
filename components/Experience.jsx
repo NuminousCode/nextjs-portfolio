@@ -24,10 +24,10 @@ const Experience = (data) => {
   const formatedCmsUrl = data ? `${imgUrl}?fm=webp&w=2000&h=2000`: null;
 
   // Custom hooks
-  useIntersectionObserver([titleRef1, titleRef2], 1, 1000)
-  useIntersectionObserver([itemRef1, itemRef2, cvRef], 1, 2000)
+  useIntersectionObserver([titleRef1, titleRef2], 1, 0)
+  useIntersectionObserver([itemRef1, itemRef2, cvRef], 1, 500)
   useImageIntersectionObserver([imageRef], .2, 200)
-  useFilterIntersectionObserver([imageRef], .5, 4000)
+  useFilterIntersectionObserver([imageRef], .5, 1500)
   useDynamicIconSize([`.${styles.icon}`], 300, 5, 0.02);
   useDynamicIconSize([`.${styles.git}`], 300, 15, 0.04);
   useDynamicFontSize([`.${styles.title}`], 16, 100, 0.04);

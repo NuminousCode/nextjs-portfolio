@@ -24,8 +24,8 @@ const About = (data) => {
   useDynamicFontSize([`.${styles.title}`], 36, 90, 0.06);
   useImageIntersectionObserver([imageRef], .2, 500)
   useDynamicIconSize([`.${styles.headshot}`], 300, 150, .25)
-  useIntersectionObserver([headshotRef], 1, 1500, .8)
-  useIntersectionObserver([titleRef], 1, 200)
+  useIntersectionObserver([headshotRef], 1, 250, .8)
+  useIntersectionObserver([titleRef], 1, 0)
 
     return (
     <div className = {styles.containerMain} id="about">
