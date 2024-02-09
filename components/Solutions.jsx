@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import styles from "../styles/Solutions.module.css";
 import Ticker from '../components/Ticker'
-import useIntersectionObserver from "../helpers/useImageIntersectionObserver";
+import useIntersectionObserver from "../helpers/useIntersectionObserver";
 import useImageIntersectionObserver from "../helpers/useImageIntersectionObserver"
 import useDynamicFontSize from "../helpers/dynamicFontSize";
 
