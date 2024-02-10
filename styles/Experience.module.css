@@ -56,7 +56,7 @@ Experience Section
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    transform: translateY(-30px);
+    transform: translateY(30px);
     transition: transform 1s ease-in-out, opacity 1s ease-in-out
 }
 
@@ -78,8 +78,8 @@ Experience Section
     font-size: 48px;
     position: relative;
     opacity: 0;
-    transform: translateY(-30px);
-    transition: transform 2s ease-in-out, opacity 2s ease-in-out
+    transform: translateY(30px);
+    transition: transform 1500ms ease-in-out, opacity 1500ms ease-in-out
 }
 
 .items {
@@ -92,8 +92,8 @@ Experience Section
     width: 80%;
     z-index: 10;
     opacity: 0;
-    transform: translateY(-30px);
-    transition: transform 2s ease-in-out, opacity 2s ease-in-out
+    transform: translateY(30px);
+    transition: transform 1500ms ease-in-out, opacity 1500ms ease-in-out
 }
 
 .cv {
@@ -103,8 +103,8 @@ Experience Section
     justify-content: center;
     align-items: center;
     align-self: center;
-    transform: translateY(-30px);
-    transition: transform 2s ease-in-out, opacity 2s ease-in-out
+    transform: translateY(30px);
+    transition: transform 1500ms ease-in-out, opacity 1500ms ease-in-out
 }
 
 .icon,

@@ -15,7 +15,7 @@ About Section
 }
 
 .image {
-  filter: saturate(90%);
+  filter: saturate(0%);
   object-fit: cover;
   height: 100%;
   opacity: 0;
@@ -25,15 +25,15 @@ About Section
 
 .title {
   opacity: 0;
-  background: linear-gradient(180deg, #FFFFFF 41.5%, #FDA564 100%);
+  /* background: linear-gradient(180deg, #FFFFFF 41.5%, #FDA564 100%); */
   background-clip: text;
-  color: transparent;
+  color: white;
   top: 2%;
   position: absolute;
   z-index: 10;
   align-self: center;
   transform: translateY(30px);
-  transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 3s ease-in-out, transform 2s ease-in-out;
 }
 
 .headshot{
