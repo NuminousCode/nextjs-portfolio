@@ -13,12 +13,14 @@ const Projects = (data) => {
     const newsUrl= data.data[40]
     const natureUrl= data.data[41]
     const dbUrl= data.data[39]
+    const magisUrl= data.data[43]
 
     // Image formatting
     const formatedBackgroundUrl = data ? `${imgUrl}?fm=webp&w=2000&h=3000`: null;
     const formatedNewsUrl = data ? `${newsUrl}?fm=webp&w=750&h=1000`: null;
     const formatedDBUrl = data ? `${dbUrl}?fm=webp&w=750&h=1000`: null;
     const formatedNatureUrl = data ? `${natureUrl}?fm=webp&w=750&h=1000`: null;
+    const formatedmagisUrl = data ? `${magisUrl}?fm=webp&w=750&h=1000`: null;
 
     // DOM elements references initializing 
     const imageRef = useRef(null);
@@ -36,7 +38,7 @@ const Projects = (data) => {
     useDynamicFontSize([`.${styles.feature}`], 8, 16, 0.01);
     useDynamicIconSize([`.${styles.invertIcon}`], 300, 20, 0.04);
     useDynamicIconSize([`.${styles.vercelIcon}`], 300, 15, 0.018);
-    useDynamicMargin([`.${styles.projectsTitle}`], .15)
+    useDynamicMargin([`.${styles.projectsTitle}`], .12)
     useIntersectionObserver([responsive], .02, 500)
     useImageIntersectionObserver([imageRef], .02)
     useImageIntersectionObserver([cont], .02, 500)
@@ -112,13 +114,39 @@ const Projects = (data) => {
              onClick={(e) => { if (activeCard !== 'item3') e.preventDefault(); }}
           >
             <div className={styles.cardContent}>
-              <h1 className={styles.cardHeader}>Forests</h1>
+              <h1 className={styles.cardHeader}>Conservation</h1>
               <div className={styles.features}>
                 <div className={styles.feature}>html |</div>
                 <div className={styles.feature}>css |</div>
                 <div className={styles.feature}>js</div>
               </div>
               <img className={styles.cardImg} src={formatedNatureUrl} alt="image"/>
+            </div>
+          </a>
+        </label>
+      );
+
+      const cardContent4 = (
+        <label className={styles.card} htmlFor="item4" id={styles.card4}>
+            {activeCard !== 'item4' && <div className={styles.cardOverlay}></div>}
+          <a href={activeCard === 'item4' ? "https://magiswebservices.com" : "#"} 
+             target="_blank" 
+             className={styles.link} 
+             style={{
+               pointerEvents: activeCard === 'item4' ? 'auto' : 'none',
+               textDecoration: 'none'
+             }}
+             onClick={(e) => { if (activeCard !== 'item4') e.preventDefault(); }}
+          >
+            <div className={styles.cardContent}>
+              <h1 className={styles.cardHeader}>Magis Web Services</h1>
+              <div className={styles.features}>
+                <div className={styles.feature}>next.js |</div>
+                <div className={styles.feature}>Material UI |</div>
+                <div className={styles.feature}>Node.js |</div>
+                <div className={styles.feature}>Bootstrap</div>
+              </div>
+              <img className={styles.cardImg} src={formatedmagisUrl} alt="image"/>
             </div>
           </a>
         </label>
@@ -134,11 +162,13 @@ const Projects = (data) => {
             <input type="radio" name="slider" id="item1" className={styles.item1} defaultChecked onChange={handleRadioChange} />
             <input type="radio" name="slider" id="item2" className={styles.item2} onChange={handleRadioChange}/>
             <input type="radio" name="slider" id="item3" className={styles.item3} onChange={handleRadioChange}/>
+            <input type="radio" name="slider" id="item4" className={styles.item4} onChange={handleRadioChange}/>
 
             <div className={styles.cards}>
                 {cardContent1}
                 {cardContent2}
                 {cardContent3}
+                {cardContent4}
             </div>
 
         </div>
