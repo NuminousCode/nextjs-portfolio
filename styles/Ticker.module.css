@@ -1,5 +1,5 @@
 /*****************
-Ticker Styles
+Ticker Styles 
 ******************/
 
 .containerMain{
@@ -40,7 +40,7 @@ Ticker Styles
 
 /*****************
 Revert inversion filter 
-for select icson
+for select icons
 ******************/
 .tickerContent2 > .item:nth-of-type(2) > .invertIcon,
 .tickerContent2 > .item:nth-of-type(6) > .invertIcon,

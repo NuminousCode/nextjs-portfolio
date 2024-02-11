@@ -14,8 +14,7 @@ const Projects = (data) => {
     const natureUrl= data.data[41]
     const dbUrl= data.data[39]
 
-
-
+    // Image formatting
     const formatedBackgroundUrl = data ? `${imgUrl}?fm=webp&w=2000&h=3000`: null;
     const formatedNewsUrl = data ? `${newsUrl}?fm=webp&w=750&h=1000`: null;
     const formatedDBUrl = data ? `${dbUrl}?fm=webp&w=750&h=1000`: null;

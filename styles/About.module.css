@@ -1,5 +1,5 @@
 /*****************
-About Section 
+About Section Styles
 ******************/
 
 .containerMain {
@@ -25,7 +25,6 @@ About Section
 
 .title {
   opacity: 0;
-  /* background: linear-gradient(180deg, #FFFFFF 41.5%, #FDA564 100%); */
   background-clip: text;
   color: white;
   top: 2%;
@@ -51,6 +50,11 @@ About Section
   border-radius: 10px;
   transition: width 500ms ease, height 500ms ease, opacity 3500ms ease
 }
+
+/*****************
+Media Queries
+******************/
+
 
 @media(min-width: 600px){
 .headshot{

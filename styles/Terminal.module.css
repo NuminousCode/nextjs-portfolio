@@ -1,5 +1,5 @@
 /*****************
-Terminal Styles
+Terminal Styles Styles
 ******************/
 
 .containerMain {
@@ -89,7 +89,7 @@ Keyframe Animations
   }
 
   /*****************
-Media Query
+Media Queries
 ******************/
 
   @media(min-width: 600px){

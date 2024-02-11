@@ -14,7 +14,7 @@ const useDynamicMarginTop = (className, fraction) => {
         };
 
         window.addEventListener('resize', handleResize);
-        handleResize(); // Set initial value
+        handleResize(); 
 
         return () => window.removeEventListener('resize', handleResize);
     }, [className, fraction]);

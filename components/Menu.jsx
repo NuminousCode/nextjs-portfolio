@@ -5,7 +5,6 @@ import useDynamicFontSize from '../helpers/dynamicFontSize'
 import useDynamicLineHeight from '../helpers/dynamicLineHeightMenu'
 import useDynamicMarginTop from '../helpers/dynamicMarginMenu'
 
-
 const Menu = () => {
 
   //Custom hooks

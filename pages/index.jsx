@@ -11,7 +11,7 @@ import Contact from '../components/Contact'
 import Solutions from '../components/Solutions'
 import styles from '../styles/home.module.css'
 
-
+// Home page
 const Home = ({params}) => {
 const imgUrls = params.imgUrls
   return (

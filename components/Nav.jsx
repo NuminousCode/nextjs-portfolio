@@ -5,7 +5,6 @@ const Nav = (data) => {
 
     // Extract image url
     const  upUrl= data.data[42]
-
     
     useEffect(() => {
         const backToTopBtn = document.getElementById("backToTopBtn");

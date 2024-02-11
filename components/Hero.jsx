@@ -5,7 +5,6 @@ import useDynamicIconSize from '../helpers/dynamicIconSize'
 import useDynamicFontSize from '../helpers/dynamicFontSize'
 import useDynamicLineHeight from '../helpers/dynamicLineHeight'
 
-
 const Hero = (data) => {
 
   // Image URL extraction

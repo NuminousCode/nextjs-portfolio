@@ -1,5 +1,5 @@
 /*****************
-Projects Section
+Projects Section Styles
 ******************/
 
 .containerMain {
@@ -54,7 +54,6 @@ Projects Section
 }
 
 .carousel {
-  /* border: white solid 1px; */
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -149,17 +148,15 @@ Projects Section
   filter: saturate(100%);
 }
 
-/* Style for the overlay */
 .cardOverlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1; /* Ensure it's above the card content but below the label */
+  z-index: 1; 
 }
 
-/* Apply hover effect when hovering over the overlay */
 .cardOverlay:hover + .link > .cardContent > .cardImg{
   filter: saturate(100%);
 }

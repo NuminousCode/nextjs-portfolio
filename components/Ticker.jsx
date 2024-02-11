@@ -5,7 +5,7 @@ import useDynamicIconSize from "../helpers/dynamicIconSize";
 import useDynamicFontSize from "../helpers/dynamicFontSize";
 
 const Ticker = (data) => {
-    // Image URL extraction
+    // Image URL extractions
     const nextIconUrl = data.data[6];
     const reactIconUrl = data.data[7];
     const angularIconUrl = data.data[11];

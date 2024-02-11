@@ -7,9 +7,10 @@ import useDynamicFontSize from "../helpers/dynamicFontSize";
 
 const Solutions = (data) => {
 
-  // Image URL extractions
+  // Image URL extraction
   const imgUrl = data.data[35];
 
+  //Image formatting
   const formatedCmsUrl = data
   ? `${imgUrl}?fm=webp&w=2000&h=1500`
   : null;
