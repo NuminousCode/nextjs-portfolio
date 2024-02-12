@@ -29,6 +29,13 @@ const Projects = (data) => {
     const titleProjects = useRef(null);
     const carousel = useRef(null);
 
+    const projectLinks = {
+      item1: 'https://github.com/NuminousCode/nextjs-news-site',
+      item2: 'https://github.com/NuminousCode/mongo-crud-app',
+      item3: 'https://github.com/NuminousCode/fundamentals-conservation-site',
+      item4: 'https://github.com/NuminousCode/web-services',
+    };
+
     // Custom hooks
     useDynamicFontSize([`.${styles.label}`, `.${styles.title}`], 1, 0.035);
     useDynamicFontSize([`.${styles.item}`], 1, 0.035);
@@ -46,9 +53,15 @@ const Projects = (data) => {
     useIntersectionObserver([titleProjects], 1, 0, .8)
 
     const [activeCard, setActiveCard] = useState('item1'); 
+    const [currentItem, setCurrentItem] = useState('item1'); // Default to the first item
     const handleRadioChange = (event) => {
         setActiveCard(event.target.id);
+        setCurrentItem(event.target.id);
       };
+
+      
+
+
       const cardContent1 = (
         <label className={styles.card} htmlFor="item1" id={styles.card1}>
             {activeCard !== 'item1' && <div className={styles.cardOverlay}></div>}
@@ -163,15 +176,18 @@ const Projects = (data) => {
             <input type="radio" name="slider" id="item2" className={styles.item2} onChange={handleRadioChange}/>
             <input type="radio" name="slider" id="item3" className={styles.item3} onChange={handleRadioChange}/>
             <input type="radio" name="slider" id="item4" className={styles.item4} onChange={handleRadioChange}/>
-
             <div className={styles.cards}>
                 {cardContent1}
                 {cardContent2}
                 {cardContent3}
                 {cardContent4}
             </div>
-
         </div>
+            <div className={styles.projectLink}>
+              <a href={projectLinks[currentItem]} target="_blank" rel="noopener noreferrer" id={styles.repoLink} className={`${styles[`${currentItem}Link`]}`}>
+              &lt;/&gt;
+              </a>
+            </div>
       </div>
       <img src={formatedBackgroundUrl} alt="image" className={styles.image} ref={imageRef} />
     </div>
