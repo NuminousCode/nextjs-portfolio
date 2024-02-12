@@ -28,6 +28,7 @@ const Projects = (data) => {
     const cont = useRef(null)
     const titleProjects = useRef(null);
     const carousel = useRef(null);
+    const repoLinks = useRef(null);
 
     const projectLinks = {
       item1: 'https://github.com/NuminousCode/nextjs-news-site',
@@ -51,6 +52,7 @@ const Projects = (data) => {
     useImageIntersectionObserver([cont], .02, 500)
     useImageIntersectionObserver([carousel], .2, 250)
     useIntersectionObserver([titleProjects], 1, 0, .8)
+    useIntersectionObserver([repoLinks], 1, 0, 1)
 
     const [activeCard, setActiveCard] = useState('item1'); 
     const [currentItem, setCurrentItem] = useState('item1'); // Default to the first item
@@ -183,7 +185,7 @@ const Projects = (data) => {
                 {cardContent4}
             </div>
         </div>
-            <div className={styles.projectLink}>
+            <div className={styles.projectLink} ref={repoLinks}>
               <a href={projectLinks[currentItem]} target="_blank" rel="noopener noreferrer" id={styles.repoLink} className={`${styles[`${currentItem}Link`]}`}>
               &lt;/&gt;
               </a>
