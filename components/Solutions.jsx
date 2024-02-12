@@ -6,7 +6,6 @@ import useImageIntersectionObserver from "../helpers/useImageIntersectionObserve
 import useDynamicFontSize from "../helpers/dynamicFontSize";
 
 const Solutions = (data) => {
-
   // Image URL extraction
   const imgUrl = data.data[35];
 

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import styles from '../styles/Projects.module.css'
 import useDynamicFontSize from '../helpers/dynamicFontSize';
 import useDynamicIconSize from '../helpers/dynamicIconSize';
@@ -60,10 +60,7 @@ const Projects = (data) => {
         setActiveCard(event.target.id);
         setCurrentItem(event.target.id);
       };
-
       
-
-
       const cardContent1 = (
         <label className={styles.card} htmlFor="item1" id={styles.card1}>
             {activeCard !== 'item1' && <div className={styles.cardOverlay}></div>}
