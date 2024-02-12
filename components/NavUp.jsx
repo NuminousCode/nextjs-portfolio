@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from '../styles/Nav.module.css'; 
 
-const Nav = (data) => {
+const NavUp = (data) => {
 
     // Extract image url
     const  upUrl= data.data[42]
@@ -37,4 +37,4 @@ const scrollToTop = () => {
         behavior: 'smooth'
     });}
 
-export default Nav;
+export default NavUp;

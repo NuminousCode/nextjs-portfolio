@@ -32,7 +32,7 @@ About Section Styles
   z-index: 10;
   align-self: center;
   transform: translateY(30px);
-  transition: opacity 3s ease-in-out, transform 2s ease-in-out;
+  transition: opacity 1500ms ease-in-out, transform 2s ease-in-out;
 }
 
 .headshot{

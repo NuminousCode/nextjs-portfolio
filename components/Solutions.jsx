@@ -29,7 +29,7 @@ const Solutions = (data) => {
 
   return (
     <div className={styles.containerMain}>
-      <div className ={styles.anchorSolutions} id="anchorSolutions"></div>
+      <div className ={styles.anchorSolutions} id="solutions"></div>
       <div className = {styles.title} ref={titleRef}>Responsive Full-Stack Applications</div>
       <div className = {styles.builtWith} ref={builtRef}>Built With</div>
       <Ticker data= {data.data}/>

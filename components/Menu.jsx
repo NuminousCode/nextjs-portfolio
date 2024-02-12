@@ -15,7 +15,7 @@ const Menu = () => {
   return (
     <div className = {styles.containerMain}>
       {/*Animated smooth scrolling navigation menu.*/}
-      <SmoothScrollLink to="#anchorSolutions" duration={1500}><div className = {styles.menuItem}>SOLUTIONS</div></SmoothScrollLink>
+      <SmoothScrollLink to="#solutions" duration={1500}><div className = {styles.menuItem}>SOLUTIONS</div></SmoothScrollLink>
       <SmoothScrollLink to="#projects" duration={2000}><div className = {styles.menuItem}>PROJECTS</div></SmoothScrollLink>
       <SmoothScrollLink to="#about" duration={2000}><div className = {styles.menuItem}>ABOUT</div></SmoothScrollLink>
       <SmoothScrollLink to="#experience" duration={2500}><div className = {styles.menuItem}>EXPERIENCE</div></SmoothScrollLink>

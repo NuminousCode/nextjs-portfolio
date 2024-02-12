@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import fs from 'fs'
 import path from 'path'
-import Nav from '../components/Nav'
+import NavUp from '../components/NavUp'
 import Hero from '../components/Hero'
 import Projects from  '../components/Projects'
 import About  from '../components/About'
@@ -26,7 +26,7 @@ const imgUrls = params.imgUrls
       <About data={imgUrls}/>
       <Experience data={imgUrls}/>
       <Contact data={imgUrls}/>
-      <Nav data={imgUrls}/>
+      <NavUp data={imgUrls}/>
     </div>
   )
 }
