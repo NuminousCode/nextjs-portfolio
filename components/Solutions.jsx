@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import styles from "../styles/Solutions.module.css";
 import Ticker from '../components/Ticker'
 import useIntersectionObserver from "../helpers/useIntersectionObserver";
