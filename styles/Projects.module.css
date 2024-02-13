@@ -184,12 +184,13 @@ Projects Section Styles
 
 #repoLink{
   text-decoration: none;
-  color: #212529;
-  transition: color 350ms ease-in-out;
-  text-shadow: 1px 1px 1px #adb5bd
+  color: #000000;
+  transition: color 350ms ease-in-out, text-shadow 350ms ease-in-out;
+  text-shadow: 2px -2px 2px #495057;
 }
 #repoLink:hover{
-  color: #343a40;
+  color: #051923;
+  text-shadow: 2px -2px 2px #006494;
 }
 
 

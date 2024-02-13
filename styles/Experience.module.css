@@ -95,7 +95,9 @@ Experience Section Styles
     transform: translateY(30px);
     transition: transform 1500ms ease-in-out, opacity 1500ms ease-in-out
 }
-
+.bucket:nth-of-type(2) .item:nth-child(2){
+    justify-content: flex-start;
+}
 .cv {
     opacity: 0;
     display: flex;
@@ -110,6 +112,7 @@ Experience Section Styles
 .icon,
 .git {
     filter: invert(100%);
+    margin-right: 30px;
 }
 
 .icon {

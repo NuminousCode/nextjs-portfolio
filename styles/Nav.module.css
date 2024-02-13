@@ -31,11 +31,6 @@ Scroll-to-Top Button Styles
     filter: invert(100%)
 }
 
-#backToTopBtn:hover {
-    background-color: #555;
-}
-
-
 /*****************
 Media Queries
 ******************/

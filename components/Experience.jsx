@@ -51,11 +51,11 @@ const Experience = (data) => {
         <div className = {styles.bucket}>
           <div className = {styles.title} ref={titleRef2}>SOURCE CODE</div>
           <div className = {styles.item} ref={itemRef2}>
-          <a href={githubUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
-            <div>Github</div>
-            </a>
             <a href={githubUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
             <img src={gitUrl} alt="image" className ={styles.git}/>
+            </a>
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
+            <div>Github</div>
             </a>
           </div>
         </div>
