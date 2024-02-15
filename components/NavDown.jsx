@@ -23,6 +23,7 @@ const NavDown = ({ data }) => {
             const scrollPosition = window.scrollY;
 
             // Identifying the last anchor based on its position in the anchors array
+            if(scrollPosition > 60){
             const lastAnchor = anchors[anchors.length - 1];
             const lastAnchorRect = lastAnchor.getBoundingClientRect();
 
@@ -32,6 +33,7 @@ const NavDown = ({ data }) => {
             } else {
                 setIsButtonVisible(true); // Otherwise, show button based on scroll position
             }
+        }
         };
 
         window.addEventListener('scroll', handleScroll);
