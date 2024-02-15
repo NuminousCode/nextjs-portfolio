@@ -2,6 +2,7 @@ import Head from 'next/head'
 import fs from 'fs'
 import path from 'path'
 import NavUp from '../components/NavUp'
+import NavDown from '../components/NavDown'
 import Hero from '../components/Hero'
 import Projects from  '../components/Projects'
 import About  from '../components/About'
@@ -9,6 +10,7 @@ import Experience from '../components/Experience'
 import Contact from '../components/Contact'
 import Solutions from '../components/Solutions'
 import styles from '../styles/home.module.css'
+// import '../helpers/scrollToNext'
 
 // Home page
 const Home = ({params}) => {
@@ -26,6 +28,7 @@ const imgUrls = params.imgUrls
       <Experience data={imgUrls}/>
       <Contact data={imgUrls}/>
       <NavUp data={imgUrls}/>
+      <NavDown data={imgUrls}/>
     </div>
   )
 }
