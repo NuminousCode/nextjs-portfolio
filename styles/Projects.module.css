@@ -45,6 +45,7 @@ Projects Section Styles
 }
 
 .projectsTitle {
+margin-top: 100px;
   font-family: 'Mechsuit';
   opacity: 0;
   transform: translateY(30px);
@@ -173,13 +174,12 @@ Projects Section Styles
   opacity: 0;
   position: absolute;
   align-self: center;
-  bottom: 25%;
+  bottom: 20%;
   z-index: 10;
   font-family: "Mechsuit";
   align-self: center;
-  font-size: 36px;
   transform: translateY(30px);
-  transition: opacity 2s ease-in-out, transform 2s ease-in-out
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out, bottom 1s ease
 }
 
 #repoLink{
@@ -245,4 +245,9 @@ Media Query
     display: none;
   }
 
+}
+@media(min-width:1600px) {
+  .projectLink{
+    bottom: 25%;
+  }
 }

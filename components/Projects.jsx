@@ -24,7 +24,6 @@ const Projects = (data) => {
 
     // DOM elements references initializing 
     const imageRef = useRef(null);
-    const responsive = useRef(null);
     const cont = useRef(null)
     const titleProjects = useRef(null);
     const carousel = useRef(null);
@@ -40,14 +39,11 @@ const Projects = (data) => {
     // Custom hooks
     useDynamicFontSize([`.${styles.label}`, `.${styles.title}`], 1, 0.035);
     useDynamicFontSize([`.${styles.item}`], 1, 0.035);
-    useDynamicFontSize([`.${styles.responsive}`], 1, 0.050);
     useDynamicFontSize([`.${styles.projectsTitle}`], 24, 100, 0.032);
     useDynamicFontSize([`.${styles.cardHeader}`], 16, 60, 0.03);
     useDynamicFontSize([`.${styles.feature}`], 8, 16, 0.01);
-    useDynamicIconSize([`.${styles.invertIcon}`], 300, 20, 0.04);
-    useDynamicIconSize([`.${styles.vercelIcon}`], 300, 15, 0.018);
+    useDynamicFontSize([`.${styles.projectLink}`], 20, 36, 0.025);
     useDynamicMargin([`.${styles.projectsTitle}`], .12)
-    useIntersectionObserver([responsive], .02, 500)
     useImageIntersectionObserver([imageRef], .02)
     useImageIntersectionObserver([cont], .02, 500)
     useImageIntersectionObserver([carousel], .2, 250)

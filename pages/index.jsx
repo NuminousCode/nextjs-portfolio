@@ -10,7 +10,6 @@ import Experience from '../components/Experience'
 import Contact from '../components/Contact'
 import Solutions from '../components/Solutions'
 import styles from '../styles/home.module.css'
-// import '../helpers/scrollToNext'
 
 // Home page
 const Home = ({params}) => {

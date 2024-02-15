@@ -21,11 +21,18 @@ const NavDown = ({ data }) => {
 
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
+            const viewportWidth = window.innerWidth;
 
             // Identifying the last anchor based on its position in the anchors array
-            if(scrollPosition > 60){
+            if(scrollPosition > 60 ){
             const lastAnchor = anchors[anchors.length - 1];
             const lastAnchorRect = lastAnchor.getBoundingClientRect();
+
+            if (viewportWidth > 750){
+                setIsButtonVisible(true);
+            } else{
+                setIsButtonVisible(false);
+            }
 
             // Check if the scroll position is beyond the last anchor
             if (lastAnchor && (scrollPosition + window.innerHeight) >= (lastAnchorRect.top + window.scrollY)) {
@@ -33,6 +40,9 @@ const NavDown = ({ data }) => {
             } else {
                 setIsButtonVisible(true); // Otherwise, show button based on scroll position
             }
+           
+        } else {
+            setIsButtonVisible(false);
         }
         };
 
