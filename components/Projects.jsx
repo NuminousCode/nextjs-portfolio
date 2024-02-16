@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import styles from '../styles/Projects.module.css'
 import useDynamicFontSize from '../helpers/dynamicFontSize';
-import useDynamicIconSize from '../helpers/dynamicIconSize';
 import useDynamicMargin from '../helpers/useDynamicMarginProjects';
 import useIntersectionObserver from '../helpers/useIntersectionObserver'
 import useImageIntersectionObserver from '../helpers/useImageIntersectionObserver'
@@ -51,7 +50,7 @@ const Projects = (data) => {
     useIntersectionObserver([repoLinks], 1, 0, 1)
 
     const [activeCard, setActiveCard] = useState('item1'); 
-    const [currentItem, setCurrentItem] = useState('item1'); // Default to the first item
+    const [currentItem, setCurrentItem] = useState('item1'); 
     const handleRadioChange = (event) => {
         setActiveCard(event.target.id);
         setCurrentItem(event.target.id);

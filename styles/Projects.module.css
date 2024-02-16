@@ -185,12 +185,12 @@ margin-top: 100px;
 #repoLink{
   text-decoration: none;
   color: black;
-  transition: color 350ms ease-in-out, text-shadow 350ms ease-in-out;
+  transition: color 350ms ease-in-out, text-shadow 350ms ease-in-out, font-size 300ms ease;
   text-shadow: 2px -2px 2px #495057;
 }
 #repoLink:hover{
-  color: #051923;
   text-shadow: 2px -2px 2px #a9d2ef;
+  
 }
 
 
