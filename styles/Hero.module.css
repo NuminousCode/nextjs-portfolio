@@ -11,9 +11,11 @@ Hero Section Styles
 }
 
 .image {
+  opacity: 0;
   object-fit: cover;
   height: 100%;
   min-height: 750px;
+  animation: fadeIn 2s 2s forwards;
 }
 
 .header {
