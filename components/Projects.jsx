@@ -47,7 +47,7 @@ const Projects = (data) => {
     useImageIntersectionObserver([cont], .02, 500)
     useImageIntersectionObserver([carousel], .2, 250)
     useIntersectionObserver([titleProjects], 1, 0, .8)
-    useIntersectionObserver([repoLinks], 1, 0, 1)
+    useIntersectionObserver([repoLinks], .01, 0, 1)
 
     const [activeCard, setActiveCard] = useState('item1'); 
     const [currentItem, setCurrentItem] = useState('item1'); 

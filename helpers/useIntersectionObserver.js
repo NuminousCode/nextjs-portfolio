@@ -31,7 +31,7 @@ const useIntersectionObserver = (refs, threshold, delay = 0, opacity = 1) => {
                 }
             });
         };
-    }, [refs, threshold, delay, opacity]); // Include opacity in the dependency array
+    }, [refs, threshold, delay, opacity]); 
 };
 
 export default useIntersectionObserver;
