@@ -28,13 +28,6 @@ const Projects = (data) => {
     const carousel = useRef(null);
     const repoLinks = useRef(null);
 
-    const projectLinks = {
-      item1: 'https://github.com/NuminousCode/nextjs-news-site',
-      item2: 'https://github.com/NuminousCode/mongo-crud-app',
-      item3: 'https://github.com/NuminousCode/fundamentals-conservation-site',
-      item4: 'https://github.com/NuminousCode/web-services',
-    };
-
     // Custom hooks
     useDynamicFontSize([`.${styles.label}`, `.${styles.title}`], 1, 0.035);
     useDynamicFontSize([`.${styles.item}`], 1, 0.035);
@@ -50,10 +43,8 @@ const Projects = (data) => {
     useIntersectionObserver([repoLinks], .01, 0, 1)
 
     const [activeCard, setActiveCard] = useState('item1'); 
-    const [currentItem, setCurrentItem] = useState('item1'); 
     const handleRadioChange = (event) => {
         setActiveCard(event.target.id);
-        setCurrentItem(event.target.id);
       };
       
       const cardContent1 = (
@@ -77,6 +68,11 @@ const Projects = (data) => {
                 <div className={styles.feature}>serverless mongo-db</div>
               </div>
             <img className={styles.cardImg} src={formatedNewsUrl} alt="image" />
+            <div className={styles.projectLink}>
+              <a href='https://github.com/NuminousCode/nextjs-news-site' target="_blank" rel="noopener noreferrer">
+                &lt;/&gt;
+              </a>
+            </div>
             </div>
           </a>
         </label>
@@ -103,6 +99,11 @@ const Projects = (data) => {
                 <div className={styles.feature}>Bootstrap</div>
               </div>
             <img className={styles.cardImg} src={formatedDBUrl} alt="image"/>
+            <div className={styles.projectLink}>
+              <a href='https://github.com/NuminousCode/mongo-crud-app' target="_blank" rel="noopener noreferrer">
+                &lt;/&gt;
+              </a>
+            </div>
             </div>
           </a>
         </label>
@@ -128,6 +129,11 @@ const Projects = (data) => {
                 <div className={styles.feature}>js</div>
               </div>
               <img className={styles.cardImg} src={formatedNatureUrl} alt="image"/>
+              <div className={styles.projectLink}>
+              <a href='https://github.com/NuminousCode/fundamentals-conservation-site' target="_blank" rel="noopener noreferrer">
+                &lt;/&gt;
+              </a>
+            </div>
             </div>
           </a>
         </label>
@@ -154,6 +160,11 @@ const Projects = (data) => {
                 <div className={styles.feature}>Bootstrap</div>
               </div>
               <img className={styles.cardImg} src={formatedmagisUrl} alt="image"/>
+              <div className={styles.projectLink}>
+              <a href='https://github.com/NuminousCode/web-services' target="_blank" rel="noopener noreferrer">
+                &lt;/&gt;
+              </a>
+            </div>
             </div>
           </a>
         </label>
@@ -177,11 +188,6 @@ const Projects = (data) => {
                 {cardContent4}
             </div>
         </div>
-            <div className={styles.projectLink} ref={repoLinks}>
-              <a href={projectLinks[currentItem]} target="_blank" rel="noopener noreferrer" id={styles.repoLink} className={`${styles[`${currentItem}Link`]}`}>
-              &lt;/&gt;
-              </a>
-            </div>
       </div>
       <img src={formatedBackgroundUrl} alt="image" className={styles.image} ref={imageRef} />
     </div>

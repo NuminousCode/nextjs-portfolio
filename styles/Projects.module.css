@@ -45,7 +45,7 @@ Projects Section Styles
 }
 
 .projectsTitle {
-margin-top: 100px;
+  margin-top: 100px;
   font-family: 'Mechsuit';
   opacity: 0;
   transform: translateY(30px);
@@ -64,7 +64,8 @@ margin-top: 100px;
   min-width: 300px;
   height: 35%;
   min-height: 175px;
-  transition: opacity 2s ease-in-out
+  transition: opacity 2s ease-in-out;
+  margin-top: 2%;
 }
 
 .cards {
@@ -152,7 +153,8 @@ margin-top: 100px;
 }
 .cardContent:hover ~ .cardImg,
 .cardHeader:hover ~ .cardImg,
-.features:hover ~ .cardImg
+.features:hover ~ .cardImg,
+.projectLink:hover ~ .cardImg
  {
   filter: saturate(100%);
 }
@@ -171,28 +173,29 @@ margin-top: 100px;
 }
 
 .projectLink{
-  opacity: 0;
+  display: flex;
+  height: 40px;
   position: absolute;
-  align-self: center;
-  bottom: 20%;
-  z-index: 10;
+  bottom: 5%;
+  right: 10%;
   font-family: "Mechsuit";
-  align-self: center;
-  transform: translateY(30px);
-  transition: opacity 2s ease-in-out, transform 2s ease-in-out, bottom 1s ease
+  text-shadow: #495057 2px 2px;
+  transition: transform 150ms ease-in-out, text-shadow 150ms ease-in-out;
+  z-index: 10;
+}
+.projectLink:hover{
+  transform: translate(-1px, -1px);
+  text-shadow: #495057 3px 3px;
 }
 
-#repoLink{
+.projectLink a{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  font-size: 16px;
+  color: #adb5bd;
   text-decoration: none;
-  color: black;
-  transition: color 350ms ease-in-out, text-shadow 350ms ease-in-out, font-size 300ms ease;
-  text-shadow: 2px -2px 2px #495057;
 }
-#repoLink:hover{
-  text-shadow: 2px -2px 2px #a9d2ef;
-  
-}
-
 
 /*****************
 Carousel Rotation
@@ -237,7 +240,7 @@ Carousel Rotation
 }
 
 /*****************
-Media Query
+Media Queries
 ******************/
 
 @media(max-width:700px) {
@@ -246,8 +249,19 @@ Media Query
   }
 
 }
-@media(min-width:1600px) {
-  .projectLink{
-    bottom: 25%;
+@media(max-width:1200px) {
+  .projectLink a{
+    display: none;
   }
+
+}
+@media(max-width:1400px) {
+  .projectLink a{
+  font-size: 12px;
+  }
+  .projectLink{
+    bottom: 5%;
+    right: 5%;
+  }
+
 }
