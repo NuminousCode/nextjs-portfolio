@@ -247,13 +247,11 @@ Media Queries
   .features {
     display: none;
   }
-
 }
 @media(max-width:1200px) {
   .projectLink a{
     display: none;
   }
-
 }
 @media(max-width:1400px) {
   .projectLink a{
@@ -263,5 +261,4 @@ Media Queries
     bottom: 5%;
     right: 5%;
   }
-
 }
