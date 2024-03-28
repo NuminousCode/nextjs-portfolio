@@ -99,7 +99,6 @@ Experience Section Styles
     justify-content: flex-start;
 }
 .cv {
-    /* border: solid red 1px; */
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -118,7 +117,6 @@ Experience Section Styles
 .icon {
     filter: invert(100%);
     margin-top: 5px;
-    /* border: solid red 1px; */
 }
 
 .link {
