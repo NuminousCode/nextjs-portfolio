@@ -43,7 +43,7 @@ const Experience = (data) => {
           <div className = {styles.title} ref={titleRef1}>Experience</div>
           <div className = {styles.item} ref={itemRef1}>Associate - Infosys · '22–'23</div>
           <div className ={styles.cv} ref={cvRef}>
-            <div>CV</div>
+            <div>Resume</div>
             <a href="https://docs.google.com/document/d/1OwzZzqCRPQMq6j-6Fw8D2yg2M_-q08pFZO61wNdNMvA/export?format=pdf" download="cv.pdf" className ={styles.link}><img src={iconUrl} alt="image" className ={styles.icon}/></a>
           </div>
         </div>
