@@ -22,7 +22,7 @@ const About = (data) => {
   
   // Custom hooks
   useDynamicFontSize([`.${styles.title}`], 36, 90, 0.06);
-  useIntersectionObserver([headshotRef], 1, 250, .7)
+  useIntersectionObserver([headshotRef], .2, 250, .7)
   useIntersectionObserver([titleRef], 1, 0)
 
     return (

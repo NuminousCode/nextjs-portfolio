@@ -3,6 +3,7 @@ About Section Styles
 ******************/
 
 .containerMain {
+  /* border: solid red 1px; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -75,16 +76,15 @@ max-height: 700px;
 }
 @media(min-width: 1300px){
   .headshot{
-    max-width: 40%;
-    max-height: 30%;
+    max-width: 35%;
+    max-height: 50%;
     left: 5%;
-    max-height: 1000px;
   }
 }
 @media(min-width: 1600px){
 .headshot{
   top: 15%;
-  min-height: 750px;
+  min-height: 650px;
 }
   .containerMain{
     max-height: 1200px;
