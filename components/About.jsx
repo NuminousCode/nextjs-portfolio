@@ -22,8 +22,6 @@ const About = (data) => {
   
   // Custom hooks
   useDynamicFontSize([`.${styles.title}`], 36, 90, 0.06);
-  useImageIntersectionObserver([imageRef], .2, 500)
-  useDynamicIconSize([`.${styles.headshot}`], 300, 150, .25)
   useIntersectionObserver([headshotRef], 1, 250, .7)
   useIntersectionObserver([titleRef], 1, 0)
 
@@ -32,6 +30,7 @@ const About = (data) => {
       <div className = {styles.title} ref={titleRef}>About</div>
       <img src={formatedHeadshotUrl} alt="image" className = {styles.headshot} ref={headshotRef}/>
       <Terminal className={styles.terminal}/>
+      
       <img src={formatedCmsUrl} alt="image" className = {styles.image} ref={imageRef}/>
     </div>
   )

@@ -3,15 +3,15 @@ Terminal Styles Styles
 ******************/
 
 .containerMain {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
     top: 60%;
     position: absolute;
     z-index: 10;
-    width: 50%;
+    width: 70%;
     min-width: 200px;
     max-width: 350px;
-    height: 25%;
+    height: 40%;
     min-height: 200px;
     transition: opacity 1s ease-in-out;
   }
@@ -36,7 +36,7 @@ Terminal Styles Styles
     color: #a3cef1;
     position: absolute;
     z-index: 1;
-    padding: 20% 12%;
+    padding: 15% 15%;
     overflow: hidden;
     top: 3%;
     right: 3%;
@@ -72,7 +72,7 @@ Keyframe Animations
 
   @keyframes terminal-glitch {
     0% {
-      transform: scale(.7, .8);
+      transform: scale(.9, .8);
     }
     50% {
       transform: scale(.9, 1);
@@ -98,27 +98,32 @@ Media Queries
     }
     .containerMain{
       min-height: 250px;
-      top: 50%;
+      max-height: 275px;
     }
   }
 
-  @media(min-width: 1100px){
+  @media(min-width: 750px){
   .containerMain{
     width: 45%;
     max-width: 400px;
-    top: 15%;
+    top: 20%;
     right: 5%;
+  }
+  }
+  @media(min-width: 1200px){
+  .containerMain{
+    right: 15%;
   }
   }
   @media(min-width: 1600px){
   .containerMain{
     max-width: 600px;
+    max-height: 600px;
     top: 15%;
-    right: -15%;
     height: 375px;
   }
   .terminal{
-    padding: 25% 5% 0 12%;
+    /* padding: 25% 5% 0 12%; */
   }
   }
 

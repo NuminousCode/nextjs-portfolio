@@ -31,15 +31,15 @@ const Projects = (data) => {
     // Custom hooks
     useDynamicFontSize([`.${styles.label}`, `.${styles.title}`], 1, 0.035);
     useDynamicFontSize([`.${styles.item}`], 1, 0.035);
-    useDynamicFontSize([`.${styles.projectsTitle}`], 24, 100, 0.032);
+    useDynamicFontSize([`.${styles.projectsTitle}`], 36, 100, 0.05);
     useDynamicFontSize([`.${styles.cardHeader}`], 16, 60, 0.03);
     useDynamicFontSize([`.${styles.feature}`], 8, 16, 0.01);
     useDynamicFontSize([`.${styles.projectLink}`], 20, 36, 0.025);
-    useDynamicMargin([`.${styles.projectsTitle}`], .12)
+    useDynamicMargin([`.${styles.projectsTitle}`], .15)
     useImageIntersectionObserver([imageRef], .02)
     useImageIntersectionObserver([cont], .02, 500)
     useImageIntersectionObserver([carousel], .2, 250)
-    useIntersectionObserver([titleProjects], 1, 0, .8)
+    useIntersectionObserver([titleProjects], 1, 0, 1)
     useIntersectionObserver([repoLinks], .01, 0, 1)
 
     const [activeCard, setActiveCard] = useState('item1'); 

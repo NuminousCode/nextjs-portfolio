@@ -7,8 +7,7 @@ const Contact = (data) => {
     // Image URL extractions
     const imgUrl = data.data[28]
     const cloudflareUrl = data.data[26]
-    
-    const formatedCmsUrl = data ? `${imgUrl}?fm=webp&w=2000&h=2000`: null;
+    const formatedCmsUrl = data ? `${imgUrl}`: null;
 
     // Custom hook
     useDynamicIconSize([`.${styles.cfIcon}`], 300, 20, 0.02);

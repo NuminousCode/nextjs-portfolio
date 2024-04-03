@@ -49,6 +49,7 @@ Contact Section Styles
     justify-content: space-around;
     align-items: center;
     z-index: 10;
+    max-height: 200px;
 }
 
 .contactItem{
@@ -171,7 +172,7 @@ Media Queries
         padding: 2% 15% 0 15%;
     }
     .title{
-        top:0%;
+        top:3%;
         font-size: 84px;
     }
 }
