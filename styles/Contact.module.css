@@ -140,7 +140,6 @@ Media Queries
         padding: 0 5%;
     }
     .contactInfo{
-        height: 50%;
         margin-bottom: 0;
     }
     .contactItem{
@@ -164,7 +163,8 @@ Media Queries
         font-size:14px;
     }
     .contactInfo{
-        height: 30%;
+        /* border: solid red 1px; */
+        min-height: 400px;
     }
 }
 @media(min-width: 1600px){
