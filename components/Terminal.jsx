@@ -31,7 +31,7 @@ const Terminal = () => {
     
     // String array for terminal display
     const items = [
-        "'m a software engineer, specializing in full stack development",
+        "'m a software engineer, specializing in full stack development.",
         "build user interfaces.",
         "build and maintain database and server systems.",
         "integrate third-party services and APIs.",
