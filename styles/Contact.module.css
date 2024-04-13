@@ -16,6 +16,7 @@ Contact Section Styles
     object-fit: cover;
     width: 100%;
     transition: opacity 3s ease-in-out;
+    filter: saturate(0%)
 }
 
 .contactAnchor{
