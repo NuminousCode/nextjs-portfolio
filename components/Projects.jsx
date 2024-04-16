@@ -68,13 +68,13 @@ const Projects = (data) => {
                 <div className={styles.feature}>serverless mongo-db</div>
               </div>
             <img className={styles.cardImg} src={formatedNewsUrl} alt="image" />
+            </div>
+          </a>
             <div className={styles.projectLink}>
               <a href='https://github.com/NuminousCode/nextjs-news-site' target="_blank" rel="noopener noreferrer">
                 &lt;/&gt;
               </a>
             </div>
-            </div>
-          </a>
         </label>
       );
       
@@ -99,13 +99,13 @@ const Projects = (data) => {
                 <div className={styles.feature}>Bootstrap</div>
               </div>
             <img className={styles.cardImg} src={formatedDBUrl} alt="image"/>
+            </div>
+          </a>
             <div className={styles.projectLink}>
               <a href='https://github.com/NuminousCode/mongo-crud-app' target="_blank" rel="noopener noreferrer">
                 &lt;/&gt;
               </a>
             </div>
-            </div>
-          </a>
         </label>
       );
       
@@ -129,13 +129,13 @@ const Projects = (data) => {
                 <div className={styles.feature}>js</div>
               </div>
               <img className={styles.cardImg} src={formatedNatureUrl} alt="image"/>
+            </div>
+          </a>
               <div className={styles.projectLink}>
               <a href='https://github.com/NuminousCode/fundamentals-conservation-site' target="_blank" rel="noopener noreferrer">
                 &lt;/&gt;
               </a>
             </div>
-            </div>
-          </a>
         </label>
       );
 
@@ -160,17 +160,19 @@ const Projects = (data) => {
                 <div className={styles.feature}>Bootstrap</div>
               </div>
               <img className={styles.cardImg} src={formatedmagisUrl} alt="image"/>
+            </div>
+          </a>
               <div className={styles.projectLink}>
               <a href='https://github.com/NuminousCode/web-services' target="_blank" rel="noopener noreferrer">
                 &lt;/&gt;
               </a>
             </div>
-            </div>
-          </a>
         </label>
       );
       
   return (
+    // <>
+    // </>
     <div className={styles.containerMain}>
         <div  className = {styles.projectsAnchor} id="projects"></div>
       <div className={styles.containerProjects}>
