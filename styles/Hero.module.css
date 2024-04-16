@@ -11,11 +11,11 @@ Hero Section Styles
 }
 
 .image {
-  opacity: 0;
+  opacity: 1;
   object-fit: cover;
   height: 100%;
   min-height: 750px;
-  animation: fadeIn 2s 2s forwards;
+  /* animation: fadeIn 2s 2s forwards; */
 }
 
 .header {
@@ -84,9 +84,9 @@ Hero Section Styles
   z-index: 10;
   margin-left: 5%;
   text-align: left;
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out .75s forwards;
-  transition: font-size 500ms ease, line-height 500ms ease, right 500ms ease, margin-top 500ms ease, opacity 500ms ease
+  opacity: 1;
+  /* animation: fadeIn 2s ease-in-out .75s forwards; */
+  /* transition: font-size 500ms ease, line-height 500ms ease, right 500ms ease, margin-top 500ms ease, opacity 500ms ease */
 }
 
 .active {

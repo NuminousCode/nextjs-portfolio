@@ -1,5 +1,6 @@
 import React from 'react'  
 import Menu from './Menu'
+import Head from 'next/head'
 import styles from '../styles/Hero.module.css'
 import useDynamicIconSize from '../helpers/dynamicIconSize'
 import useDynamicFontSize from '../helpers/dynamicFontSize'
@@ -20,15 +21,21 @@ const Hero = (data) => {
   useDynamicLineHeight([`.${styles.slogan}`], 0.03);
 
   return (
-    <div className={styles.containerMain} >
-      <div className ={styles.header}>
-        <div className={styles.logo}>G.S</div>
+    <>
+      <Head>
+        <link rel="preload" href={formatedCmsUrl} as="image" />
+        <link rel="preload" href="../styles/Hero.module.css" as="style" />
+      </Head>
+      <div className={styles.containerMain}>
+        <div className={styles.header}>
+          <div className={styles.logo}>G.S</div>
+        </div>
+        <div className={styles.slogan}>MODERN WEB DEVELOPMENT</div>
+        <Menu />
+        <img src={formatedCmsUrl} alt="image" className={styles.image} />
       </div>
-      <div className = {styles.slogan}>MODERN WEB DEVELOPMENT</div>
-      <Menu />
-      <img src={formatedCmsUrl} alt="image" className = {styles.image}/>
-    </div>
-  )
+    </>
+  );
 }
 
 export default Hero
