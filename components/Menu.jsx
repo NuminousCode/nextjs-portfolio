@@ -10,7 +10,6 @@ const Menu = () => {
   //Custom hooks
   useDynamicFontSize([`.${styles.menuItem}`], 12, 60, 0.04);
   useDynamicLineHeight([`.${styles.containerMain}`], .08);
-  useDynamicMarginTop([`.${styles.containerMain}`],0.01);
   
   return (
     <div className = {styles.containerMain}>

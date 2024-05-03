@@ -70,7 +70,7 @@ Hero Section Styles
   font-family: 'Techno';
   z-index: 10;
   font-size: 48px;
-  animation: fadeInDown 2s ease-in-out forwards;
+  animation: fadeInDown 1.2s ease-in-out forwards;
   transition: font-size 500ms ease, margin 500ms ease, opacity 500ms ease;
 }
 

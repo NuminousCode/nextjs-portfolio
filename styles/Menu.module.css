@@ -12,7 +12,7 @@ Menu Styles Styles
     position: absolute;
     right: 6%;
     margin-top: 350px;
-    animation: fadeInRight 3s;
+    animation: fadeInRight 2s;
     transition: font-size 300ms ease, left 300ms ease, margin-top 300ms ease, line-height 300ms ease
 }
 .active{
