@@ -142,7 +142,7 @@ const Projects = (data) => {
       const cardContent4 = (
         <label className={styles.card} htmlFor="item4" id={styles.card4}>
             {activeCard !== 'item4' && <div className={styles.cardOverlay}></div>}
-          <a href={activeCard === 'item4' ? "https://magiswebservices.com" : "#"} 
+          <a href={activeCard === 'item4' ? "https://magis-web-serv.pages.dev/" : "#"} 
              target="_blank" 
              className={styles.link} 
              style={{
