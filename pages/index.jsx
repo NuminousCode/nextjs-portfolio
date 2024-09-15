@@ -9,6 +9,7 @@ import About  from '../components/About'
 import Experience from '../components/Experience'
 import Contact from '../components/Contact'
 import Solutions from '../components/Solutions'
+import ComingSoon from '../components/ComingSoon'
 import styles from '../styles/home.module.css'
 
 // Home page
@@ -20,14 +21,15 @@ const imgUrls = params.imgUrls
       <link rel="icon" href="/GS.png" type="image/png"/>
       <title>GerardoSanchez.dev</title>
       </Head>
-      <Hero data={imgUrls}/>
+      <ComingSoon />
+      {/* <Hero data={imgUrls}/>
       <Solutions data={imgUrls}/>
       <Projects data={imgUrls}/>
       <About data={imgUrls}/>
-      {/* <Experience data={imgUrls}/> */}
+      <Experience data={imgUrls}/>
       <Contact data={imgUrls}/>
       <NavUp data={imgUrls}/>
-      <NavDown data={imgUrls}/>
+      <NavDown data={imgUrls}/> */}
     </div>
   )
 }

@@ -6,7 +6,7 @@ import styles from "../styles/Terminal.module.css";
 const Terminal = () => {
 
     //  State variables initializing 
-    const introTextContent = "Hi, my name is Gerardo.<br/>I ";
+    const introTextContent = "Hi, my name is Gerardo.<br/>I'm a full-stack web developer ";
     const [introText, setIntroText] = useState('');
     const [introTyped, setIntroTyped] = useState(false);
     const [isTerminalVisible, setIsTerminalVisible] = useState(false);
@@ -31,7 +31,6 @@ const Terminal = () => {
     
     // String array for terminal display
     const items = [
-        "'m a software engineer, specializing in full stack development.",
         "build user interfaces.",
         "build and maintain database and server systems.",
         "integrate third-party services and APIs.",
