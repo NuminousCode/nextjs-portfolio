@@ -41,7 +41,6 @@ const Hero = (data) => {
         <link rel="preload" href={formatedCmsUrl} as="image" />
         <link rel="preload" href="../styles/Hero.module.css" as="style" />
       </Head>
-      {imageLoaded &&
       <div className={styles.containerMain}>
         <div className={styles.header}>
           <div className={styles.logo}>G.S</div>
@@ -50,7 +49,6 @@ const Hero = (data) => {
         <Menu />
         <img src={formatedCmsUrl} alt="image" className={styles.image} />
       </div>
-      }
     </>
   );
 }

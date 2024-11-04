@@ -21,7 +21,6 @@ const imgUrls = params.imgUrls
       <link rel="icon" href="/GS.png" type="image/png"/>
       <title>GerardoSanchez.dev</title>
       </Head>
-      {/* <ComingSoon /> */}
       <Hero data={imgUrls}/>
       <Solutions data={imgUrls}/>
       <Projects data={imgUrls}/>
