@@ -21,15 +21,15 @@ const imgUrls = params.imgUrls
       <link rel="icon" href="/GS.png" type="image/png"/>
       <title>GerardoSanchez.dev</title>
       </Head>
-      <ComingSoon />
-      {/* <Hero data={imgUrls}/>
+      {/* <ComingSoon /> */}
+      <Hero data={imgUrls}/>
       <Solutions data={imgUrls}/>
       <Projects data={imgUrls}/>
       <About data={imgUrls}/>
-      <Experience data={imgUrls}/>
+      {/* <Experience data={imgUrls}/> */}
       <Contact data={imgUrls}/>
       <NavUp data={imgUrls}/>
-      <NavDown data={imgUrls}/> */}
+      <NavDown data={imgUrls}/>
     </div>
   )
 }

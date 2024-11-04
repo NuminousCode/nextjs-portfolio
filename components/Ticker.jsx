@@ -15,14 +15,14 @@ const Ticker = (data) => {
     const cssIconUrl = data.data[10];
     const jsIconUrl = data.data[8];
     const cloudflareUrl = data.data[26];
-    const vercelUrl = data.data[27];
+    const figmaUrl = data.data[27];
     const sqlUrl = data.data[20];
     const mySqlUrl = data.data[21];
     const sequelizeUrl = data.data[17];
     const expressUrl = data.data[22];
     const nodeUrl = data.data[12];
     const mongoUrl = data.data[19];
-    const mongooseUrl = data.data[18];
+    const graphUrl = data.data[23];
     const cSharpUrl = data.data[24];
     const javaUrl = data.data[25];
     const efCoreUrl = data.data[13];
@@ -71,8 +71,8 @@ const Ticker = (data) => {
                     <div>JavaScript</div>
                 </div>
                 <div className={styles.item}>
-                    <img src={vercelUrl} alt="Vercel" className={styles.invertIcon} />
-                    <div>Vercel</div>
+                    <img src={figmaUrl} alt="Figma" className={styles.invertIcon} />
+                    <div>Figma</div>
                 </div>
                 <div className={styles.item}>
                     <img src={sqlUrl} alt="SQL Server" className={styles.invertIcon} />
@@ -95,16 +95,16 @@ const Ticker = (data) => {
                     <div>Mongo DB</div>
                 </div>
                 <div className={styles.item}>
-                    <img src={mongooseUrl} alt="Mongoose" className={styles.invertIcon} />
-                    <div>Mongoose</div>
+                    <img src={graphUrl} alt="GraphQL" className={styles.invertIcon} />
+                    <div>GraphQL</div>
                 </div>
                 <div className={styles.item}>
                     <img src={efCoreUrl} alt=".NET" className={styles.invertIcon} />
                     <div>.NET</div>
                 </div>
                 <div className={styles.item}>
-                    <img src={cloudflareUrl} alt="Cloudflare" className={styles.invertIcon} />
-                    <div>Cloudflare</div>
+                    <img src={cloudflareUrl} alt="Python" className={styles.invertIcon} />
+                    <div>Python</div>
                 </div>
                 <div className={styles.item}>
                     <img src={javaUrl} alt="Java" className={styles.invertIcon} />
@@ -157,8 +157,8 @@ const Ticker = (data) => {
                     <div>JavaScript</div>
                 </div>
                 <div className={styles.item}>
-                    <img src={vercelUrl} alt="Vercel" className={styles.invertIcon} />
-                    <div>Vercel</div>
+                    <img src={figmaUrl} alt="Figma" className={styles.invertIcon} />
+                    <div>Figma</div>
                 </div>
                 <div className={styles.item}>
                     <img src={sqlUrl} alt="SQL Server" className={styles.invertIcon} />
@@ -181,16 +181,16 @@ const Ticker = (data) => {
                     <div>Mongo DB</div>
                 </div>
                 <div className={styles.item}>
-                    <img src={mongooseUrl} alt="Mongoose" className={styles.invertIcon} />
-                    <div>Mongoose</div>
+                    <img src={graphUrl} alt="GraphQL" className={styles.invertIcon} />
+                    <div>GraphQL</div>
                 </div>
                 <div className={styles.item}>
                     <img src={efCoreUrl} alt=".NET" className={styles.invertIcon} />
                     <div>.NET</div>
                 </div>
                 <div className={styles.item}>
-                    <img src={cloudflareUrl} alt="Cloudflare" className={styles.invertIcon} />
-                    <div>Cloudflare</div>
+                    <img src={cloudflareUrl} alt="Python" className={styles.invertIcon} />
+                    <div>Python</div>
                 </div>
                 <div className={styles.item}>
                     <img src={javaUrl} alt="Java" className={styles.invertIcon} />

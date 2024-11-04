@@ -6,7 +6,7 @@ import styles from "../styles/Terminal.module.css";
 const Terminal = () => {
 
     //  State variables initializing 
-    const introTextContent = "Hi, my name is Gerardo.<br/>I'm a full-stack web developer ";
+    const introTextContent = "Hi, my name is Gerardo.<br/>I'm a full-stack web developer. I ";
     const [introText, setIntroText] = useState('');
     const [introTyped, setIntroTyped] = useState(false);
     const [isTerminalVisible, setIsTerminalVisible] = useState(false);
